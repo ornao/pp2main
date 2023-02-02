@@ -10,3 +10,44 @@
 body {
     font-family: Itim;
 }
+
+ .container {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    background-color: #749DB1;
+ }
+
+.container h1 {
+    margin: 1rem;
+}
+
+.container h2 {
+    margin: 1rem;
+}
+
+.user-input {
+    margin: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.user-input input {
+    width: 20rem;
+    height: 2rem;
+}
+ 
+.container button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+    border: 0.1rem solid black;
+    text-decoration: none;
+}
+
+
