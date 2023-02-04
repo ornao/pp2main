@@ -17,7 +17,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 50rem;
-    background-color: #BEE0EF;
  }
 
 .container h1 {
@@ -28,17 +27,20 @@ body {
     margin: 1rem;
 }
 
-.user-input {
-    margin: 1rem;
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-.user-input input {
-    width: 20rem;
+form input {
+    width: 10rem;
     height: 2rem;
 }
- 
+
+#startGame {
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    border: 0.1rem solid black;
+    text-decoration: none;
+}
+
+
 .button {
     margin: 1rem;
     padding: 0.5rem;
@@ -50,11 +52,14 @@ body {
     text-decoration: none;
 }
 
+/* level styling page */
+
+
+
 /* game page styling */
 
 #question {
     text-align: center;
-    margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
 /* map */
@@ -77,4 +82,15 @@ svg path:hover {
     padding-right: 5%;
 }
 
+/* hud */
 
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+#userIcon {
+    font-size: 2.5rem;
+}
+  
