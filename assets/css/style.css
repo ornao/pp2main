@@ -50,4 +50,19 @@ body {
     text-decoration: none;
 }
 
+/* game page styling */
+/* map */
+
+svg path {
+    fill: #BEE0EF;
+    stroke: black;
+    stroke-width: .25;
+}
+
+svg path:hover {
+    fill: #B0BD46;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
 
