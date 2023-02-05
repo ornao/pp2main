@@ -1,5 +1,10 @@
 const userName = localStorage.getItem('user-name');
+const country = document.getElementById('country')
+
 document.getElementById('user-name').textContent = userName;
+
+let currentQuestion = {};
+let availableQuesions = [];
 
 let countries = [];
 
@@ -16,9 +21,13 @@ fetch("countries.json")
         console.error(err);
     });
 
-    startGame = () => {
-        questionCounter = 0;
-        score = 0;
+    function startGame() {
         availableCountries = [...countries];
+        getNewQuestion();
     };
-           
+
+    function getNewQuestion() {
+        const questionIndex = Math.floor(Math.random() * availableCountries.length);
+        currentQuestion = availableCountries[questionIndex];
+        country.innerText = currentQuestion.country;
+    };
