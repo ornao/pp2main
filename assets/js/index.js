@@ -12,4 +12,15 @@ function validateForm(event) {
     else alert ('Please enter a username with at least 4 characters')
 }
 
+const username = document.getElementById('username');
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const usernameValue = username.value;
+
+    localStorage.setItem('user-name', usernameValue);
+
+    window.location.href = "level.html";
+})
 

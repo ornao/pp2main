@@ -1,7 +1,6 @@
-// function usernameDisplay() {
-//     let adj=document.getElementById('input').value;
-//     document.write(adj).location.href = getElementById("userIcon");
-// }
+const userName = localStorage.getItem('user-name');
+document.getElementById('user-name').textContent = userName;
+
 
 document.getElementById("easy").onclick = function () {
     location.href = "game.html";

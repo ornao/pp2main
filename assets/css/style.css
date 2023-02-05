@@ -52,6 +52,12 @@ form input {
     text-decoration: none;
 }
 
+/* user name display */
+#user-name {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+
 /* level styling page */
 
 
