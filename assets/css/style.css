@@ -9,15 +9,16 @@
 
 body {
     font-family: Itim;
+    background-color: #f5fbff;
 }
 
- .container {   
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50rem;
- }
+    height: 37rem;
+}
 
 .container h1 {
     margin: 1rem;
@@ -27,22 +28,14 @@ body {
     margin: 1rem;
 }
 
-form input {
+#username {
     width: 10rem;
     height: 2rem;
-}
-
-#startGame {
-    padding: 0.5rem;
     border-radius: 0.7rem;
-    text-align: center;
-    border: 0.1rem solid black;
-    text-decoration: none;
 }
 
-
+/* BUTTONS */
 .button {
-    margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.7rem;
     font-size: 1rem;
@@ -50,6 +43,13 @@ form input {
     text-align: center;
     border: 0.1rem solid black;
     text-decoration: none;
+    background-color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 /* user name display */
@@ -68,6 +68,7 @@ form input {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 /* map */
 
 svg path {
@@ -90,13 +91,16 @@ svg path:hover {
 
 /* hud */
 
+#hud-container {
+    background-color: #3780A0;
+}
+
 #hud {
     display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-  }
+    justify-content: space-around;
+    padding: 1rem;
+}
 
 #userIcon {
     font-size: 2.5rem;
 }
-  

@@ -21,6 +21,6 @@ form.addEventListener("submit", function(e) {
 
     localStorage.setItem('user-name', usernameValue);
 
-    window.location.href = "level.html";
-})
+    // window.location.href = "level.html";
+});
 
