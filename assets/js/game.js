@@ -1,11 +1,12 @@
 const userName = localStorage.getItem('user-name');
 const country = document.getElementById('country')
+const questionNumber = document.getElementById("questionNumber")
 
 document.getElementById('user-name').textContent = userName;
 
 let currentQuestion = {};
-let availableQuesions = [];
-
+let availableCountries = [];
+let questionCounter = 0;
 let countries = [];
 
 fetch("countries.json")
@@ -21,13 +22,21 @@ fetch("countries.json")
         console.error(err);
     });
 
+    const MAX_QUESTIONS = 10;
+
     function startGame() {
+        questionCounter = 0;
         availableCountries = [...countries];
         getNewQuestion();
     };
 
     function getNewQuestion() {
+        questionCounter++;
+        questionNumber.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
         const questionIndex = Math.floor(Math.random() * availableCountries.length);
         currentQuestion = availableCountries[questionIndex];
         country.innerText = currentQuestion.country;
+
+    // availableCountries.splice(questionIndex, 1);
     };
+
