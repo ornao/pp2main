@@ -1,7 +1,7 @@
 const userName = localStorage.getItem('user-name');
 const country = document.getElementById('country')
 const atlas = document.getElementById('mapdiv');
-const questionNumber = document.getElementById("questionNumber")
+const questionNumber = document.getElementById("questionNumber");
 
 document.getElementById('user-name').textContent = userName;
 
@@ -33,21 +33,28 @@ fetch("countries.json")
     };
 
     function getNewQuestion() {
-        questionCounter++;
+        if (availableCountries.length === 0 || questionCounter >= MAX_QUESTIONS) {
+            //go to the end page
+            return window.location.assign('/end.html');
+        }
+            questionCounter++;
         questionNumber.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
         const questionIndex = Math.floor(Math.random() * availableCountries.length);
         currentQuestion = availableCountries[questionIndex];
         country.innerText = currentQuestion.country;
 
-        };
 
+        };
 
           atlas.addEventListener("click", mapSelect);
             
           function mapSelect() {
             document.getElementById("mapdiv");
             console.log("you clicked the map!")
+
+           getNewQuestion();
         }
+
         
     // availableCountries.splice(questionIndex, 1);
     
