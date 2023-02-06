@@ -1,0 +1,52 @@
+[
+    {
+        "country":"Indonesia",
+        "choice":"id='mapdiv'",
+        "answer":"class='Indonesia'"
+    },
+    {
+        "country":"Gambia",
+        "choice":"id='mapdiv'",
+        "answer":"class='The Gambia'"
+    },
+    {
+        "country":"Armenia",
+        "choice":"id='mapdiv'",
+        "answer":"class='India'"
+    },
+    {
+        "country":"Jordan",
+        "choice":"id='mapdiv'",
+        "answer":"class='Jordan'"
+    },
+    {
+        "country":"Japan",
+        "choice":"id='mapdiv'",
+        "answer":"class='Japan'"
+    },
+    {
+        "country":"Barbados",
+        "choice":"id='mapdiv'",
+        "answer":"class='Barbados'"
+    },
+    {
+        "country":"Mauritas",
+        "choice":"id='mapdiv'",
+        "answer":"class='Mauritas'"
+    },
+    {
+        "country":"Togo",
+        "choice":"id='mapdiv'",
+        "answer":"class='Togo'"
+    },
+    {
+        "country":"Papua New Guinea",
+        "choice":"id='mapdiv'",
+        "answer":"class='Papua New Guinea'"
+    },
+    {
+        "country":"Vanuatu",
+        "choice":"id='mapdiv'",
+        "answer":"class='Vanuatu'"
+    }
+]
