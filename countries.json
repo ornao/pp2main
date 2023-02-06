@@ -1,32 +1,52 @@
 [
     {
-        "country":"France"
+        "country":"France",
+        "choice":"id='mapdiv'",
+        "answer":"class='France'"
     },
     {
-        "country":"Canada"
+        "country":"Canada",
+        "choice":"id='mapdiv'",
+        "answer":"class='Canada'"
     },
     {
-        "country":"India"
+        "country":"India",
+        "choice":"id='mapdiv'",
+        "answer":"class='India'"
     },
     {
-        "country":"Nigeria"
+        "country":"Nigeria",
+        "choice":"id='mapdiv'",
+        "answer":"class='Nigeria'"
     },
     {
-        "country":"Japan"
+        "country":"Japan",
+        "choice":"id='mapdiv'",
+        "answer":"class='Japan'"
     },
     {
-        "country":"Sweden"
+        "country":"Sweden",
+        "choice":"id='mapdiv'",
+        "answer":"class='Sweden'"
     },
     {
-        "country":"New Zealand"
+        "country":"New Zealand",
+        "choice":"id='mapdiv'",
+        "answer":"class='New Zealand'"
     },
     {
-        "country":"Chile"
+        "country":"Chile",
+        "choice":"id='mapdiv'",
+        "answer":"class='Chile'"
     },
     {
-        "country":"Australia"
+        "country":"Australia",
+        "choice":"id='mapdiv'",
+        "answer":"class='Australia'"
     },
     {
-        "country":"Iceland"
+        "country":"Iceland",
+        "choice":"id='mapdiv'",
+        "answer":"class='Iceland'"
     }
 ]
