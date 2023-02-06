@@ -8,15 +8,16 @@ document.getElementById('user-name').textContent = userName;
 let currentQuestion = {};
 let availableCountries = [];
 let questionCounter = 0;
-let countries = [];
+let easy = [];
 
-fetch("countries.json")
+
+fetch("easy.json")
     .then(res => {
         return res.json();
     })
     .then(loadedCountries => {
         console.log(loadedCountries);
-        countries = loadedCountries;
+        easy = loadedCountries;
         startGame();
     })
     .catch(err => {
@@ -27,7 +28,7 @@ fetch("countries.json")
 
     function startGame() {
         questionCounter = 0;
-        availableCountries = [...countries];
+        availableCountries = [...easy];
 
         getNewQuestion();
     };
