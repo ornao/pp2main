@@ -53,13 +53,6 @@ function getNewQuestion() {
     availableCountries.splice(questionIndex, 1);
 };
 
-    atlas.addEventListener("click", mapSelect);
-            
-    function mapSelect() {
-    document.getElementById("mapdiv");
-
-
-
 // dom reference to svg map
 const map = document.getElementById("svg");
 // trigger an event
@@ -68,10 +61,11 @@ svg.addEventListener('click', selectCountry);
 // have event hold the object
 function selectCountry(event) {
     console.log(event.target)
+    getNewQuestion();
 }
 
-    // getNewQuestion();
-}
+
+
 
         
    
