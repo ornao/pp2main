@@ -43,6 +43,7 @@ fetch("countries.json")
         currentQuestion = availableCountries[questionIndex];
         country.innerText = currentQuestion.country;
 
+        availableCountries.splice(questionIndex, 1);
 
         };
 
@@ -50,13 +51,12 @@ fetch("countries.json")
             
           function mapSelect() {
             document.getElementById("mapdiv");
-            console.log("you clicked the map!")
 
            getNewQuestion();
         }
 
         
-    // availableCountries.splice(questionIndex, 1);
+   
     
       
 
