@@ -65,9 +65,16 @@ function selectCountry(event) {
 
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
-    console.log(selectedAnswer == currentQuestion.answer);
+    
+    if (selectedAnswer == currentQuestion.answer) {
+        classToApply = "correct";
+        // document.getElementsByClassName("correct").style.color = "green"
+        getNewQuestion();
+    } else 
+    classToApply = "incorrect";
+    // document.getElementsByClassName("correct").style.color = "red"
 
-    getNewQuestion();
+    console.log(classToApply);
 }
     
 
