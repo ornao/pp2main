@@ -68,14 +68,18 @@ function selectCountry(event) {
     
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
-        // document.getElementsByClassName("correct").style.color = "green"
+        // document.getElementsByClassName("correct").style.color = "green";
         getNewQuestion();
     } else 
-    classToApply = "incorrect";
-    // document.getElementsByClassName("correct").style.color = "red"
+        classToApply = "incorrect";
+    // let correctColor = document.getElementsByClassName("incorrect");
+    // for (let i=0; i < correctColor.length; i++) {
+    //     correctColor[i].style.color = "red";
+    // };
 
-    console.log(classToApply);
-}
+    selectedChoice.classList.add(classToApply);
+
+};
     
 
 
