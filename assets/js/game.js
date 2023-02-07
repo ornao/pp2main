@@ -2,12 +2,14 @@ const userName = localStorage.getItem('user-name');
 const country = document.getElementById('country')
 const atlas = document.getElementById('mapdiv');
 const questionNumber = document.getElementById("questionNumber");
+const scoreDisplay = document.getElementById('score');
 
 document.getElementById('user-name').textContent = userName;
 
 let currentQuestion = {};
 let availableCountries = [];
 let questionCounter = 0;
+let scoreUpdate = 0;
 let easy = [];
 
 // get country name from json file
@@ -69,17 +71,18 @@ function selectCountry(event) {
     // if else statement that applies class
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
+        increaseScore();
         selectedChoice.classList.add(classToApply); 
-        correctCountrySelected();
-        getNewQuestion(); 
+        correctCountrySelected(); 
+        getNewQuestion();
     }
     else 
         classToApply = "incorrect";
         selectedChoice.classList.add(classToApply); 
         incorrectCountrySelected();
-
-        
+    
 }    
+
         // function to style country when correctly clicked
         function correctCountrySelected() {
         let correctColor= document.getElementsByClassName('correct');
@@ -97,8 +100,13 @@ function selectCountry(event) {
            incorrectColor[i].style.fill = "red";
           }
     })
-};
 
+          };
+        
+function increaseScore() {
+        scoreUpdate+=1;
+        scoreDisplay.innerText = scoreUpdate;
+};
    
 
 
