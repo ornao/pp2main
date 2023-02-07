@@ -44,7 +44,7 @@ function getNewQuestion() {
     questionCounter++;
     // display number of question over mav number of question
     questionNumber.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
-    // display random country from list array which orginall got from .json file
+    // display random country from list array which orginally got from .json file
     const questionIndex = Math.floor(Math.random() * availableCountries.length);
     currentQuestion = availableCountries[questionIndex];
     // display it in span of game.html
@@ -60,9 +60,17 @@ svg.addEventListener('click', selectCountry);
 // declare a call back function when svg map is clicked
 // have event hold the object
 function selectCountry(event) {
-    console.log(event.target)
+
+// function that checks if the country selected on the map is the same as the country the question asked
+
+    const selectedChoice = event.target;
+    const selectedAnswer = selectedChoice.dataset['number'];
+    console.log(selectedAnswer == currentQuestion.answer);
+
     getNewQuestion();
 }
+    
+
 
 
 

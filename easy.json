@@ -1,52 +1,52 @@
 [
     {
         "country":"France",
-        "choice":"id='mapdiv'",
-        "answer":"class='France'"
+      
+        "answer":"1"
     },
     {
         "country":"Canada",
-        "choice":"id='mapdiv'",
-        "answer":"class='Canada'"
+       
+        "answer":"2"
     },
     {
         "country":"India",
-        "choice":"id='mapdiv'",
-        "answer":"class='India'"
+        
+        "answer":"3"
     },
     {
         "country":"Nigeria",
-        "choice":"id='mapdiv'",
-        "answer":"class='Nigeria'"
+       
+        "answer":"4"
     },
     {
         "country":"Japan",
-        "choice":"id='mapdiv'",
-        "answer":"class='Japan'"
+       
+        "answer":"5"
     },
     {
         "country":"Sweden",
-        "choice":"id='mapdiv'",
-        "answer":"class='Sweden'"
+       
+        "answer":"6"
     },
     {
         "country":"New Zealand",
-        "choice":"id='mapdiv'",
-        "answer":"class='New Zealand'"
+       
+        "answer":"7"
     },
     {
         "country":"Chile",
-        "choice":"id='mapdiv'",
-        "answer":"class='Chile'"
+       
+        "answer":"8"
     },
     {
         "country":"Australia",
-        "choice":"id='mapdiv'",
-        "answer":"class='Australia'"
+        
+        "answer":"9"
     },
     {
         "country":"Iceland",
-        "choice":"id='mapdiv'",
-        "answer":"class='Iceland'"
+       
+        "answer":"10"
     }
 ]
