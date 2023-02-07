@@ -78,7 +78,7 @@ svg path {
 }
 
 svg path:hover {
-    fill: #B0BD46;
+    fill: black;
     transition: 0.6s;
     cursor: pointer;
 }
@@ -87,6 +87,14 @@ svg path:hover {
     width: 100%;
     margin: auto;
     padding-right: 5%;
+}
+
+.incorrect {
+    fill: none;
+}
+
+.correct {
+    fill: none;
 }
 
 /* hud */
