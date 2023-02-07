@@ -65,32 +65,39 @@ function selectCountry(event) {
 
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
-    
+
+    // if else statement that applies class
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
-        // apply class so can now style correctly selected country
-        selectedChoice.classList.add(classToApply);
-        // style for country when correctly clicked
+        selectedChoice.classList.add(classToApply); 
+        correctCountrySelected();
+        getNewQuestion(); 
+    }
+    else 
+        classToApply = "incorrect";
+        selectedChoice.classList.add(classToApply); 
+        incorrectCountrySelected();
+
+        
+}    
+        // function to style country when correctly clicked
+        function correctCountrySelected() {
         let correctColor= document.getElementsByClassName('correct');
         document.getElementById('svg').addEventListener("click", function(){ 
-          for (let i = 0; i < incorrectColor.length; i++) {
+          for (let i = 0; i < correctColor.length; i++) {
            correctColor[i].style.fill = "green";
-        } });
-        getNewQuestion();
-    } else 
-        classToApply = "incorrect";
-        // apply class so can now style incorectly selected country
-        selectedChoice.classList.add(classToApply);
-        // style for country when incorrectly clicked
+          }
+        })
+    };
+          // style for country when incorrectly clicked
+          function incorrectCountrySelected() {
         let incorrectColor= document.getElementsByClassName('incorrect');
         document.getElementById('svg').addEventListener("click", function(){ 
           for (let i = 0; i < incorrectColor.length; i++) {
            incorrectColor[i].style.fill = "red";
-        } });
-
-    };
-    
-   
+          }
+    })
+};
 
    
 
