@@ -44,7 +44,7 @@ function getNewQuestion() {
     }
     // increase question by 1
     questionCounter++;
-    // display number of question over mav number of question
+    // display number of question over max number of question
     questionNumber.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
     // display random country from list array which orginally got from .json file
     const questionIndex = Math.floor(Math.random() * availableCountries.length);
@@ -92,7 +92,7 @@ function selectCountry(event) {
           }
         })
     };
-          // style for country when incorrectly clicked
+          // function to style country when incorrectly clicked
           function incorrectCountrySelected() {
         let incorrectColor= document.getElementsByClassName('incorrect');
         document.getElementById('svg').addEventListener("click", function(){ 
