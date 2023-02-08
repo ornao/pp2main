@@ -16,25 +16,26 @@ let easy = [];
 fetch("easy.json")
     .then(res => {
         return res.json();
-})
+    })
     .then(loadedCountries => {
         console.log(loadedCountries);
         easy = loadedCountries;
         startGame();
-})
+    })
     .catch(err => {
         console.error(err);
-});
+    });
 
 // max number of questions for the game
 const MAX_QUESTIONS = 10;
 
 function startGame() {
     questionCounter = 0;
+    scoreUpdate = 0;
     // list country names in an array
-        availableCountries = [...easy];
+    availableCountries = [...easy];
 
-        getNewQuestion();
+    getNewQuestion();
 };
 
 function getNewQuestion() {
@@ -66,71 +67,84 @@ function selectCountry(event) {
 
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
+    const MAX_ATTEMPTS = 3;
+
+    let clickCounter = 0;
 
     // if else statement that applies class and checks if the country 
     // selected on the map is the same as the country the question asked
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
+        selectedChoice.classList.add(classToApply);
         increaseScore();
-        selectedChoice.classList.add(classToApply); 
-        correctCountrySelected(); 
+        correctCountrySelected();
         getNewQuestion();
-    }
-    else 
+    } else
         classToApply = "wrong";
-        selectedChoice.classList.add(classToApply); 
-        incorrectCountrySelected();
-    
-}    
+    selectedChoice.classList.add(classToApply);
+    incorrectCountrySelected();
 
-        // function to style country when correctly clicked
-        function correctCountrySelected() {
-        let correctColor= document.getElementsByClassName('correct');
-        document.getElementById('svg').addEventListener("click", function(){ 
-          for (let i = 0; i < correctColor.length; i++) {
-           correctColor[i].style.fill = "green";
-          }
+    maxGuesses();
+
+    if (clickCounter >= MAX_ATTEMPTS) {
+        selectedChoice.classList.remove(classToApply)
+
+    }
+
+    // function to style country when correctly clicked
+    function correctCountrySelected() {
+        let correctColor = document.getElementsByClassName('correct');
+        document.getElementById('svg').addEventListener("click", function () {
+            for (let i = 0; i < correctColor.length; i++) {
+                correctColor[i].style.fill = "green";
+            }
         })
     };
-          // function to style country when incorrectly clicked
-          function incorrectCountrySelected() {
-        let incorrectColor= document.getElementsByClassName('wrong');
-        document.getElementById('svg').addEventListener("click", function(){ 
-          for (let i = 0; i < incorrectColor.length; i++) {
-           incorrectColor[i].style.fill = "red";
-          }
-    })
-    
+    // function to style country when incorrectly clicked
+    function incorrectCountrySelected() {
+        let incorrectColor = document.getElementsByClassName('wrong');
+        document.getElementById('svg').addEventListener("click", function () {
+            for (let i = 0; i < incorrectColor.length; i++) {
+                incorrectColor[i].style.fill = "red";
+            }
+        })
+
     };
 
+    // const firstAttemptBonus = 3;
+    // const secondAttemptBonus = 2;
+    // const thirdAttemptBonus = 1;
 
-let clickCounter = 0;
-
-// function that only allowed 3 incorrect answers before showing correct answer
-function maxGuesses() {
-document.addEventListener('click', function(event) {
-    if (event.target.classList.contains('wrong')) {
-    clickCounter++;
-    if (clickCounter == 3) {
-        console.log("hello")
-    }
-    }})
-}
-
-maxGuesses();
-
-function increaseScore() {
-        scoreUpdate+=1;
-        scoreDisplay.innerText = scoreUpdate;
-};
-   
-
-
-
-
-
-        
-   
     
-      
 
+    // function that only allowed 3 incorrect guesses before moving on to next question
+    function maxGuesses() {
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('wrong')) {
+                clickCounter++;
+                // when reach 3/3 attempts move onto next question without points
+                if (clickCounter >= MAX_ATTEMPTS) {
+                    getNewQuestion();
+                }
+
+            }
+        })
+    }
+
+    // // function that give 3 points if correct country selected on first go
+    // if (clickCounter = 0) {
+    //     increaseScore(firstAttemptBonus);
+    //     // function that give 2 points if correct country selected on 2nd go
+    // } else if (clickCounter = 1) {
+    //     increaseScore(secondAttemptBonus);
+    //     // function that give 1 points if correct country selected on 3rd go
+    // } else if (clickCounter = 2) {
+    //     increaseScore(thirdAttemptBonus);
+    // }
+
+    // function to increase score by 1
+    function increaseScore() {
+        scoreUpdate += 1;
+        scoreDisplay.innerText = scoreUpdate;
+    }
+}
