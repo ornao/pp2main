@@ -64,12 +64,11 @@ svg.addEventListener('click', selectCountry);
 // have event hold the object
 function selectCountry(event) {
 
-// function that checks if the country selected on the map is the same as the country the question asked
-
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
 
-    // if else statement that applies class
+    // if else statement that applies class and checks if the country 
+    // selected on the map is the same as the country the question asked
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
         increaseScore();
@@ -78,7 +77,7 @@ function selectCountry(event) {
         getNewQuestion();
     }
     else 
-        classToApply = "incorrect";
+        classToApply = "wrong";
         selectedChoice.classList.add(classToApply); 
         incorrectCountrySelected();
     
@@ -95,15 +94,31 @@ function selectCountry(event) {
     };
           // function to style country when incorrectly clicked
           function incorrectCountrySelected() {
-        let incorrectColor= document.getElementsByClassName('incorrect');
+        let incorrectColor= document.getElementsByClassName('wrong');
         document.getElementById('svg').addEventListener("click", function(){ 
           for (let i = 0; i < incorrectColor.length; i++) {
            incorrectColor[i].style.fill = "red";
           }
     })
+    
+    };
 
-          };
-        
+
+let clickCounter = 0;
+
+// function that only allowed 3 incorrect answers before showing correct answer
+function maxGuesses() {
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('wrong')) {
+    clickCounter++;
+    if (clickCounter == 3) {
+        console.log("hello")
+    }
+    }})
+}
+
+maxGuesses();
+
 function increaseScore() {
         scoreUpdate+=1;
         scoreDisplay.innerText = scoreUpdate;
