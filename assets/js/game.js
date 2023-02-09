@@ -30,15 +30,8 @@ function loadEasyCountries() {
         .catch(err => {
             console.error(err);
         });
-
-    // let easy = document.getElementById("easy");
-    // console.log(easy)
-    // easy.addEventListener("click", function () {
-    //     // get country name from json file
-        
-    
-    // })
 }
+
 // medium level
 function loadMediumCountries() {
     fetch("countriesMedium.json")
@@ -53,11 +46,6 @@ function loadMediumCountries() {
     .catch(err => {
         console.error(err);
     });
-    // let medium = document.getElementById("medium");
-    // document.addEventListener("click", function () {
-    //     // get country name from json file
-    
-    // })
 }
 
 // hard level
@@ -74,11 +62,6 @@ function loadHardCountries() {
     .catch(err => {
         console.error(err);
     });
-    // let hard = document.getElementById("hard");
-    // document.addEventListener("click", function () {
-    //     // get country name from json file
-    
-    // })
 }
 
 gameDifficulty = localStorage.getItem('game-difficulty');
@@ -104,11 +87,6 @@ function startGame(difficulty) {
     } else {
         availableCountries = [...countriesHard];
     }
-    
-    // else if (loadMediumCountries()) {
-    // availableCountries = [...countriesMedium];
-    // } else
-    // availableCountries = [...countriesHard];
 
     getNewQuestion();
 
@@ -189,11 +167,9 @@ function selectCountry(event) {
 
     };
 
-    // const firstAttemptBonus = 3;
-    // const secondAttemptBonus = 2;
-    // const thirdAttemptBonus = 1;
-
-    
+    const firstAttemptBonus = 3;
+    const secondAttemptBonus = 2;
+    const thirdAttemptBonus = 1;
 
     // function that only allowed 3 incorrect guesses before moving on to next question
     function maxGuesses() {
@@ -209,20 +185,20 @@ function selectCountry(event) {
         })
     }
 
-    // // function that give 3 points if correct country selected on first go
-    // if (clickCounter = 0) {
-    //     increaseScore(firstAttemptBonus);
-    //     // function that give 2 points if correct country selected on 2nd go
-    // } else if (clickCounter = 1) {
-    //     increaseScore(secondAttemptBonus);
-    //     // function that give 1 points if correct country selected on 3rd go
-    // } else if (clickCounter = 2) {
-    //     increaseScore(thirdAttemptBonus);
-    // }
+    // function that give 3 points if correct country selected on first go
+    if (clickCounter = 0) {
+        increaseScore(firstAttemptBonus);
+        // function that give 2 points if correct country selected on 2nd go
+    } else if (clickCounter = 1) {
+        increaseScore(secondAttemptBonus);
+        // function that give 1 points if correct country selected on 3rd go
+    } else if (clickCounter = 2) {
+        increaseScore(thirdAttemptBonus);
+    }
 
-    // function to increase score by 1
+    // function to increase score by bonus amount
     function increaseScore() {
-        scoreUpdate += 1;
+        scoreUpdate += bonusAmount;
         scoreDisplay.innerText = scoreUpdate;
     }
 }
