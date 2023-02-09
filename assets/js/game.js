@@ -118,9 +118,11 @@ svg.addEventListener('click', selectCountry);
 // declare a call back function when svg map is clicked
 // have event hold the object
 function selectCountry(event) {
-
+    // console.log('svg clicked')
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
+    console.log('selectedAnswer: ', selectedAnswer);
+    console.log('currentQuestion.answer: ', currentQuestion.answer);
     const MAX_ATTEMPTS = 3;
 
     let clickCounter = 0;
@@ -133,10 +135,11 @@ function selectCountry(event) {
         increaseScore();
         correctCountrySelected();
         getNewQuestion();
-    } else
+    } else {
         classToApply = "wrong";
-    selectedChoice.classList.add(classToApply);
-    incorrectCountrySelected();
+        selectedChoice.classList.add(classToApply);
+        incorrectCountrySelected();
+    }
 
     maxGuesses();
 
@@ -159,12 +162,11 @@ function selectCountry(event) {
     // function to style country when incorrectly clicked
     function incorrectCountrySelected() {
         let incorrectColor = document.getElementsByClassName('wrong');
-        document.getElementById('svg').addEventListener("click", function () {
-            for (let i = 0; i < incorrectColor.length; i++) {
-                incorrectColor[i].style.fill = "red";
-            }
-        })
-
+        for (let i = 0; i < incorrectColor.length; i++) {
+            incorrectColor[i].style.fill = "red";
+        }
+        // document.getElementById('svg').addEventListener("click", function () {
+        // })
     };
 
     const firstAttemptBonus = 3;
@@ -197,7 +199,7 @@ function selectCountry(event) {
     }
 
     // function to increase score by bonus amount
-    function increaseScore() {
+    function increaseScore(bonusAmount) {
         scoreUpdate += bonusAmount;
         scoreDisplay.innerText = scoreUpdate;
     }
