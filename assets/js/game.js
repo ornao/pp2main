@@ -138,8 +138,10 @@ function selectCountry(event) {
         increaseScore(clickCounter);
         correctCountrySelected();
         getNewQuestion();
+        clickCounter = 0;
+        selectedChoice.classList.remove(classToApply);
         resetReds();
-    } else {
+    } else if (selectedAnswer) {
         clickCounter++;
         classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
