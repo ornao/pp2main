@@ -25,7 +25,7 @@ function loadEasyCountries() {
         .then(loadedCountries => {
             console.log(loadedCountries);
             countriesEasy = loadedCountries;
-            startGame();
+            startGame('easy');
         })
         .catch(err => {
             console.error(err);
@@ -48,7 +48,7 @@ function loadMediumCountries() {
     .then(loadedCountries => {
         console.log(loadedCountries);
         countriesMedium = loadedCountries;
-        startGame();
+        startGame('medium');
     })
     .catch(err => {
         console.error(err);
@@ -69,7 +69,7 @@ function loadHardCountries() {
     .then(loadedCountries => {
         console.log(loadedCountries);
         countriesHard = loadedCountries;
-        startGame();
+        startGame('hard');
     })
     .catch(err => {
         console.error(err);
@@ -93,18 +93,24 @@ if(gameDifficulty == 'easy') {
 // max number of questions for the game
 const MAX_QUESTIONS = 10;
 
-function startGame() {
+function startGame(difficulty) {
     questionCounter = 0;
     scoreUpdate = 0;
     // list country names in an array
-    availableCountries = [...countriesEasy];
+    if (difficulty == 'easy') {
+        availableCountries = [...countriesEasy];
+    } else if (difficulty == 'medium') {
+        availableCountries = [...countriesMedium];
+    } else {
+        availableCountries = [...countriesHard];
+    }
     
     // else if (loadMediumCountries()) {
     // availableCountries = [...countriesMedium];
     // } else
     // availableCountries = [...countriesHard];
 
-    // getNewQuestion();
+    getNewQuestion();
 
 };
 
