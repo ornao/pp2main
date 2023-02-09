@@ -17,10 +17,8 @@ let countriesHard = [];
 // want to connect buttons from level.html page to fetch different json files depending on choice
 // level easy
 function loadEasyCountries() {
-    let easy = document.getElementById("easy");
-    document.addEventListener("click", function () {
-        // get country name from json file
-        fetch("countriesEasy.json")
+
+    fetch("countriesEasy.json")
         .then(res => {
             return res.json();
         })
@@ -32,54 +30,65 @@ function loadEasyCountries() {
         .catch(err => {
             console.error(err);
         });
+
+    // let easy = document.getElementById("easy");
+    // console.log(easy)
+    // easy.addEventListener("click", function () {
+    //     // get country name from json file
+        
     
-    })
+    // })
 }
 // medium level
 function loadMediumCountries() {
-    let medium = document.getElementById("medium");
-    document.addEventListener("click", function () {
-        // get country name from json file
-        fetch("countriesMedium.json")
-        .then(res => {
-            return res.json();
-        })
-        .then(loadedCountries => {
-            console.log(loadedCountries);
-            countriesMedium = loadedCountries;
-            startGame();
-        })
-        .catch(err => {
-            console.error(err);
-        });
-    
+    fetch("countriesMedium.json")
+    .then(res => {
+        return res.json();
     })
+    .then(loadedCountries => {
+        console.log(loadedCountries);
+        countriesMedium = loadedCountries;
+        startGame();
+    })
+    .catch(err => {
+        console.error(err);
+    });
+    // let medium = document.getElementById("medium");
+    // document.addEventListener("click", function () {
+    //     // get country name from json file
+    
+    // })
 }
 
 // hard level
 function loadHardCountries() {
-    let hard = document.getElementById("hard");
-    document.addEventListener("click", function () {
-        // get country name from json file
-        fetch("countriesHard.json")
-        .then(res => {
-            return res.json();
-        })
-        .then(loadedCountries => {
-            console.log(loadedCountries);
-            countriesHard = loadedCountries;
-            startGame();
-        })
-        .catch(err => {
-            console.error(err);
-        });
-    
+    fetch("countriesHard.json")
+    .then(res => {
+        return res.json();
     })
+    .then(loadedCountries => {
+        console.log(loadedCountries);
+        countriesHard = loadedCountries;
+        startGame();
+    })
+    .catch(err => {
+        console.error(err);
+    });
+    // let hard = document.getElementById("hard");
+    // document.addEventListener("click", function () {
+    //     // get country name from json file
+    
+    // })
 }
 
-loadEasyCountries();
-loadMediumCountries();
-loadHardCountries();
+gameDifficulty = localStorage.getItem('game-difficulty');
+if(gameDifficulty == 'easy') {
+    loadEasyCountries();
+} else if (gameDifficulty == 'medium') {
+    loadMediumCountries();
+} else {
+    loadHardCountries();
+}
 
 // max number of questions for the game
 const MAX_QUESTIONS = 10;
