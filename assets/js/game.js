@@ -10,14 +10,15 @@ let currentQuestion = {};
 let availableCountries = [];
 let questionCounter = 0;
 let scoreUpdate = 0;
-let easy = [];
+let countriesEasy = [];
+let countriesMedium = [];
+let countriesHard = [];
 
 // want to connect buttons from level.html page to fetch different json files depending on choice
 // level easy
-
 function loadEasyCountries() {
     let easy = document.getElementById("easy");
-    easy.addEventListener("click", function () {
+    document.addEventListener("click", function () {
         // get country name from json file
         fetch("countriesEasy.json")
         .then(res => {
@@ -25,7 +26,7 @@ function loadEasyCountries() {
         })
         .then(loadedCountries => {
             console.log(loadedCountries);
-            easy = loadedCountries;
+            countriesEasy = loadedCountries;
             startGame();
         })
         .catch(err => {
@@ -37,7 +38,7 @@ function loadEasyCountries() {
 // medium level
 function loadMediumCountries() {
     let medium = document.getElementById("medium");
-    medium.addEventListener("click", function () {
+    document.addEventListener("click", function () {
         // get country name from json file
         fetch("countriesMedium.json")
         .then(res => {
@@ -45,7 +46,7 @@ function loadMediumCountries() {
         })
         .then(loadedCountries => {
             console.log(loadedCountries);
-            easy = loadedCountries;
+            countriesMedium = loadedCountries;
             startGame();
         })
         .catch(err => {
@@ -58,15 +59,15 @@ function loadMediumCountries() {
 // hard level
 function loadHardCountries() {
     let hard = document.getElementById("hard");
-    hard.addEventListener("click", function () {
+    document.addEventListener("click", function () {
         // get country name from json file
-        fetch("countriesEasy.json")
+        fetch("countriesHard.json")
         .then(res => {
             return res.json();
         })
         .then(loadedCountries => {
             console.log(loadedCountries);
-            easy = loadedCountries;
+            countriesHard = loadedCountries;
             startGame();
         })
         .catch(err => {
@@ -87,7 +88,11 @@ function startGame() {
     questionCounter = 0;
     scoreUpdate = 0;
     // list country names in an array
-    availableCountries = [...easy];
+    if(loadEasyCountries()) {availableCountries = [...countriesEasy];}
+    else if (loadMediumCountries()) {
+    availableCountries = [...countriesMedium];
+    } else
+    availableCountries = [...countriesHard];
 
     getNewQuestion();
 };
