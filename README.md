@@ -30,6 +30,27 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 - Responsiveness across different screen levels 
 - Visible navigation to different difficulty levels, reset button
 
+## User Stories
+### Site User
 
+1. I want to easily understand what the game is and how to play the game from the first page
+2. I want to have my name displayed while playing
+3. I want a leaderboard to track the highest scores for different difficuly levels
+4. I want to be able to choose from different difficulty levels
+5. I want incorrect answers to light up red and correct answers to light up green
+6. I want 3 guesses and for answer to then light up green so I can continue on with the quiz
+7. I want the country name I clicked incorrectly to show up on screen so I can learn from my mistakes
+8. I want to play game on phone and on laptop 
+9. I want score and question number I am on to be displayed as I play the game
+10. I want to be able to zoom into map so I am able to click correct country even if small
+11. I want play again button at end of quiz and be able to change difficulty level for new game
+
+### Site Owner
+
+12. I want user to easily play game
+13. I want quiz be resposnsive on different devices
+14. I want a 404 page to show in case of broken link
+15. I want user to be able to challenge themselves through different difficulty levels
+16. I want user to contact me with feedback on how they found the game and how to improve
 
 
