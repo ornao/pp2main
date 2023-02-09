@@ -14,6 +14,11 @@ let countriesEasy = [];
 let countriesMedium = [];
 let countriesHard = [];
 
+const MAX_ATTEMPTS = 3;
+
+let clickCounter = 0;
+
+
 // want to connect buttons from level.html page to fetch different json files depending on choice
 // level easy
 function loadEasyCountries() {
@@ -118,15 +123,12 @@ svg.addEventListener('click', selectCountry);
 // declare a call back function when svg map is clicked
 // have event hold the object
 function selectCountry(event) {
-    // console.log('svg clicked')
+    console.log('svg clicked')
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
     console.log('selectedAnswer: ', selectedAnswer);
     console.log('currentQuestion.answer: ', currentQuestion.answer);
-    const MAX_ATTEMPTS = 3;
-
-    let clickCounter = 0;
-
+    
     // if else statement that applies class and checks if the country 
     // selected on the map is the same as the country the question asked
     if (selectedAnswer == currentQuestion.answer) {
@@ -144,11 +146,11 @@ function selectCountry(event) {
     maxGuesses();
 
     // when reach max guesses move to new question and remove all guesses from map
-    if (clickCounter >= MAX_ATTEMPTS) {
-        getNewQuestion();
-        selectedChoice.classList.remove(classToApply)
+    // if (clickCounter >= MAX_ATTEMPTS) {
+    //     getNewQuestion();
+    //     selectedChoice.classList.remove(classToApply)
 
-    }
+    // }
 
     // function to style country when correctly clicked
     function correctCountrySelected() {
@@ -175,26 +177,28 @@ function selectCountry(event) {
 
     // function that only allowed 3 incorrect guesses before moving on to next question
     function maxGuesses() {
-        document.addEventListener('click', function (event) {
-            if (event.target.classList.contains('wrong')) {
-                clickCounter++;
-                // when reach 3/3 attempts move onto next question without points
-                if (clickCounter >= MAX_ATTEMPTS) {
-                    getNewQuestion();
-                }
+        clickCounter++;
+        if (clickCounter >= MAX_ATTEMPTS) {
+            clickCounter = 0;
+            getNewQuestion();
+        }
 
-            }
-        })
+        // document.addEventListener('click', function (event) {
+        //     if (event.target.classList.contains('wrong')) {
+        //         // when reach 3/3 attempts move onto next question without points
+
+        //     }
+        // })
     }
 
     // function that give 3 points if correct country selected on first go
-    if (clickCounter = 0) {
+    if (clickCounter == 0) {
         increaseScore(firstAttemptBonus);
         // function that give 2 points if correct country selected on 2nd go
-    } else if (clickCounter = 1) {
+    } else if (clickCounter == 1) {
         increaseScore(secondAttemptBonus);
         // function that give 1 points if correct country selected on 3rd go
-    } else if (clickCounter = 2) {
+    } else if (clickCounter == 2) {
         increaseScore(thirdAttemptBonus);
     }
 
