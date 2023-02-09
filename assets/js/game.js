@@ -12,19 +12,73 @@ let questionCounter = 0;
 let scoreUpdate = 0;
 let easy = [];
 
-// get country name from json file
-fetch("easy.json")
-    .then(res => {
-        return res.json();
+// want to connect buttons from level.html page to fetch different json files depending on choice
+// level easy
+
+function loadEasyCountries() {
+    let easy = document.getElementById("easy");
+    easy.addEventListener("click", function () {
+        // get country name from json file
+        fetch("countriesEasy.json")
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedCountries => {
+            console.log(loadedCountries);
+            easy = loadedCountries;
+            startGame();
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    
     })
-    .then(loadedCountries => {
-        console.log(loadedCountries);
-        easy = loadedCountries;
-        startGame();
+}
+// medium level
+function loadMediumCountries() {
+    let medium = document.getElementById("medium");
+    medium.addEventListener("click", function () {
+        // get country name from json file
+        fetch("countriesMedium.json")
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedCountries => {
+            console.log(loadedCountries);
+            easy = loadedCountries;
+            startGame();
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    
     })
-    .catch(err => {
-        console.error(err);
-    });
+}
+
+// hard level
+function loadHardCountries() {
+    let hard = document.getElementById("hard");
+    hard.addEventListener("click", function () {
+        // get country name from json file
+        fetch("countriesEasy.json")
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedCountries => {
+            console.log(loadedCountries);
+            easy = loadedCountries;
+            startGame();
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    
+    })
+}
+
+loadEasyCountries();
+loadMediumCountries();
+loadHardCountries();
 
 // max number of questions for the game
 const MAX_QUESTIONS = 10;

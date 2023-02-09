@@ -1,52 +1,42 @@
 [
     {
         "country":"Indonesia",
-        "choice":"id='mapdiv'",
-        "answer":"class='Indonesia'"
+        "answer":"21"
     },
     {
         "country":"Gambia",
-        "choice":"id='mapdiv'",
-        "answer":"class='The Gambia'"
+        "answer":"22"
     },
     {
         "country":"Armenia",
-        "choice":"id='mapdiv'",
-        "answer":"class='India'"
+        "answer":"23"
     },
     {
         "country":"Jordan",
-        "choice":"id='mapdiv'",
-        "answer":"class='Jordan'"
+        "answer":"24"
     },
     {
         "country":"Japan",
-        "choice":"id='mapdiv'",
-        "answer":"class='Japan'"
+        "answer":"25"
     },
     {
         "country":"Barbados",
-        "choice":"id='mapdiv'",
-        "answer":"class='Barbados'"
+        "answer":"26"
     },
     {
         "country":"Mauritas",
-        "choice":"id='mapdiv'",
-        "answer":"class='Mauritas'"
+        "answer":"27"
     },
     {
         "country":"Togo",
-        "choice":"id='mapdiv'",
-        "answer":"class='Togo'"
+        "answer":"28"
     },
     {
         "country":"Papua New Guinea",
-        "choice":"id='mapdiv'",
-        "answer":"class='Papua New Guinea'"
+        "answer":"29"
     },
     {
         "country":"Vanuatu",
-        "choice":"id='mapdiv'",
-        "answer":"class='Vanuatu'"
+        "answer":"30"
     }
 ]
