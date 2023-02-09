@@ -124,6 +124,7 @@ svg.addEventListener('click', selectCountry);
 // have event hold the object
 function selectCountry(event) {
     console.log('svg clicked')
+
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset['number'];
     console.log('selectedAnswer: ', selectedAnswer);
@@ -134,10 +135,12 @@ function selectCountry(event) {
     if (selectedAnswer == currentQuestion.answer) {
         classToApply = "correct";
         selectedChoice.classList.add(classToApply);
-        increaseScore();
+        increaseScore(clickCounter);
         correctCountrySelected();
         getNewQuestion();
+        resetReds();
     } else {
+        clickCounter++;
         classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
         incorrectCountrySelected();
@@ -183,7 +186,6 @@ function selectCountry(event) {
     }
     // function that only allowed 3 incorrect guesses before moving on to next question
     function maxGuesses() {
-        clickCounter++;
         if (clickCounter >= MAX_ATTEMPTS) {
             clickCounter = 0;
             getNewQuestion();
@@ -199,19 +201,20 @@ function selectCountry(event) {
         // })
     }
 
-    // function that give 3 points if correct country selected on first go
-    if (clickCounter == 0) {
-        increaseScore(firstAttemptBonus);
-        // function that give 2 points if correct country selected on 2nd go
-    } else if (clickCounter == 1) {
-        increaseScore(secondAttemptBonus);
-        // function that give 1 points if correct country selected on 3rd go
-    } else if (clickCounter == 2) {
-        increaseScore(thirdAttemptBonus);
-    }
+    
 
     // function to increase score by bonus amount
-    function increaseScore(bonusAmount) {
+    function increaseScore(clickCounts) {
+        // function that give 3 points if correct country selected on first go
+        if (clickCounts == 0) {
+            bonusAmount = 3;
+            // function that give 2 points if correct country selected on 2nd go
+        } else if (clickCounts == 1) {
+            bonusAmount = 2;
+            // function that give 1 points if correct country selected on 3rd go
+        } else if (clickCounts == 2) {
+            bonusAmount = 1;
+        }
         scoreUpdate += bonusAmount;
         scoreDisplay.innerText = scoreUpdate;
     }
