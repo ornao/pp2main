@@ -88,13 +88,15 @@ function startGame() {
     questionCounter = 0;
     scoreUpdate = 0;
     // list country names in an array
-    if(loadEasyCountries()) {availableCountries = [...countriesEasy];}
-    else if (loadMediumCountries()) {
-    availableCountries = [...countriesMedium];
-    } else
-    availableCountries = [...countriesHard];
+    availableCountries = [...countriesEasy];
+    
+    // else if (loadMediumCountries()) {
+    // availableCountries = [...countriesMedium];
+    // } else
+    // availableCountries = [...countriesHard];
 
-    getNewQuestion();
+    // getNewQuestion();
+
 };
 
 function getNewQuestion() {
@@ -145,7 +147,9 @@ function selectCountry(event) {
 
     maxGuesses();
 
+    // when reach max guesses move to new question and remove all guesses from map
     if (clickCounter >= MAX_ATTEMPTS) {
+        getNewQuestion();
         selectedChoice.classList.remove(classToApply)
 
     }
