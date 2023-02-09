@@ -17,4 +17,19 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 - Design a quiz to visually apeal and engage the user
 - Ensure accessibility and responsivity across different screen sizes
 
+## User Experience
+
+### Target Audience
+
+- Anyone with an interest in world geography 
+- Anyone who wants to test their knowledge of world geography 
+
+### User Requirements and Expectations
+
+- Simple, clear and interative layout 
+- Responsiveness across different screen levels 
+- Visible navigation to different difficulty levels, reset button
+
+
+
 
