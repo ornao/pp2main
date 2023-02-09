@@ -175,12 +175,20 @@ function selectCountry(event) {
     const secondAttemptBonus = 2;
     const thirdAttemptBonus = 1;
 
+    function resetReds() {
+        let incorrectColor = document.getElementsByClassName('wrong');
+        for (let i = 0; i < incorrectColor.length; i++) {
+            incorrectColor[i].style.fill = "#BEE0EF";
+        }
+    }
     // function that only allowed 3 incorrect guesses before moving on to next question
     function maxGuesses() {
         clickCounter++;
         if (clickCounter >= MAX_ATTEMPTS) {
             clickCounter = 0;
             getNewQuestion();
+
+            resetReds();
         }
 
         // document.addEventListener('click', function (event) {
