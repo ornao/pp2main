@@ -117,7 +117,7 @@ The website has 4 webpages consisting of a number of particular features
 
 ### Home page
 The home page contains:
-- The title of the game (user-stories: 1)
+- The title of the game with spinning world icon (user-stories: 1)
 - A short explanation of how to play (user-stories: 1)
 - An input form for the user to enter their name (user-stories: 2)
 - A start game button
