@@ -70,23 +70,22 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 
 1. I want to easily understand what the game is and how to play the game from the first page
 2. I want to have my name displayed while playing
-3. I want a leaderboard to track the highest scores for different difficuly levels
-4. I want to be able to choose from different difficulty levels
-5. I want incorrect answers to light up red and correct answers to light up green
-6. I want 3 guesses only and then to move onto new screen
-7. I want to get higher points when i click country correctly first time compared to second and third
-8. I want to play game on phone and on laptop 
-9. I want score and question number I am on to be displayed as I play the game
-10. I want to be able to zoom into map so I am able to click correct country even if small
-11. I want play again button at end of quiz and be able to change difficulty level for new game
+3. I want to be able to choose from different difficulty levels
+4. I want incorrect answers to light up red and correct answers to light up green
+5. I want 3 guesses only and then to move onto new screen
+6. I want to get higher points when i click country correctly first time compared to second and third
+7. I want to play game on phone and on laptop 
+8. I want score and question number I am on to be displayed as I play the game
+9. I want to be able to zoom into map so I am able to click correct country even if small
+10. I want play again button at end of quiz and be able to change difficulty level for new game
 
 ### Site Owner
 
-12. I want user to easily play game
-13. I want quiz be resposnsive on different devices
-14. I want a 404 page to show in case of broken link
-15. I want user to be able to challenge themselves through different difficulty levels
-16. I want user to contact me with feedback on how they found the game and how to improve
+11. I want user to easily understnad how to play game
+12. I want quiz be resposnsive on different devices
+13. I want a 404 page to show in case of broken link
+14. I want user to be able to challenge themselves through different difficulty levels
+15. I want user to contact me with feedback on how they found the game and how to improve
 
 ## Design
 
@@ -173,15 +172,66 @@ The home page contains:
 | Title of game and short explanation | Read the text | User immediately understands how to play | Works as expected |
 
 <details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/titleandexplanation.png">
 </details>
 
 2. I want to have my name displayed while playing
 
 | **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| Username input | Type user name that is at least over 4 characters and click start game button | User log in and name displayed in top left corner | Works as expected |
+| Username input | Type user name that is at least over 4 characters and click start game button | User is brough to next page and name is displayed at top of page | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/namedisplaypart1.png">
+<img src="assets/docs/readme_screenshots/userstories/namedisplaypart2.png">
+</details>
+
+3. I want to be able to choose from different difficulty levels
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Different difficulty selection buttons | Click easy, medium or hard button | Different questions are loaded from different json files depending on choice | Works as expected |
 
 <details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+
+Easy array loads and easy questions displayed when easy buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/easy.png">
+
+Medium array loads and medium questions displayed when medium buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/medium.png">
+
+Hard array loads and hard questions displayed when hard buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/hard.png">
+</details>
+
+11. I want user to easily understnad how to play game
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Title of game and short explanation | Read the text | User immediately understands how to play | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/titleandexplanation.png">
+</details>
+
+14. I want user to be able to challenge themselves through different difficulty levels
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Different difficulty selection buttons | Click easy, medium or hard button | Increasing difficult questions are loaded from different json files depending on choice | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+
+Easy array loads and easy questions displayed when easy buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/easy.png">
+
+Medium array loads and medium questions displayed when medium buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/medium.png">
+
+Hard array loads and hard questions displayed when hard buuton clicked
+<img src="assets/docs/readme_screenshots/userstories/hard.png">
 </details>
 
 
