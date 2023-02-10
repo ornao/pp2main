@@ -150,9 +150,7 @@ function selectCountry(event) {
         classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
         incorrectCountrySelected();
-    } else {
-        console.log("what to do now")
-    }
+    } 
 
     maxGuesses();
 
