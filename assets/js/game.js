@@ -150,6 +150,8 @@ function selectCountry(event) {
         classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
         incorrectCountrySelected();
+    } else {
+        console.log("what to do now")
     }
 
     maxGuesses();
@@ -177,6 +179,7 @@ function selectCountry(event) {
         for (let i = 0; i < incorrectColor.length; i++) {
             incorrectColor[i].style.fill = "red";
         }
+        console.log('tirning red')
         // document.getElementById('svg').addEventListener("click", function () {
         // })
     };
