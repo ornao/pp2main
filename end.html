@@ -14,12 +14,38 @@
             <div id="hud"></div>
     </div>
     <div class="container">
-        <h1><span id="user-name"></span></i>  answered <span id="scoreMaxQuestions"></span> correctly!</h1>
+        <h1><span id="user-name"></span></i>  scored <span id="scoreMaxQuestions"></span>!</h1>
         <table>highscores table</table>
         <div>
         <button id="playAgain" class="button"> Play Again</button>
         <br>
-        <button class="button">Click to give us feedback!</button>
+        <button id="modal_open" class="button">Click to give us feedback!</button>
+        <!-- adapted by developer from original html code by Chirp Internet: chirpinternet.eu  -->
+        <div id="modal_wrapper">
+            <div id="modal_window">
+            
+            <div style="text-align: right;"><a id="modal_close" href="#">close <b>X</b></a></div>
+            
+            <h1>What did you think of the game?</h1>
+            <p>Thank you for taking the time to provide feedback! </p>
+            <br>
+            <form id="modal_feedback" method="POST" action="#" accept-charset="UTF-8">
+            <p><label>Your Name<strong>*</strong><br>
+            <input class="input" type="text" required name="name" value=""></label></p>
+            <p><label>Email Address<strong>*</strong><br>
+            <input class="input" type="email" required title="Please enter a valid email address" name="email" value=""></label></p>
+            <p>Would you recommend this game to your friends and family?</p>
+                    <input type="radio" id="yes" name="recommend" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="no">No</label><br>
+            <p><label>Do you have any suggestions to improve our game?<strong>*</strong><br>
+            <textarea required name="message" cols="48" rows="8"></textarea></label></p>
+            <p><input class="button" type="submit" name="feedbackForm" value="submit"></p>
+            </form>
+            
+            </div> <!-- #modal_window -->
+            </div> <!-- #modal_wrapper -->
     </section>
 
 <!-- font awesome script -->
