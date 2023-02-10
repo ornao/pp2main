@@ -208,8 +208,10 @@ function selectCountry(event) {
         if (clickCounter >= MAX_ATTEMPTS) {
             clickCounter = 0;
             getNewQuestion();
-
-            resetReds();
+            setTimeout(() => {
+                resetReds();
+            }, 1000)
+            
         }
 
         // document.addEventListener('click', function (event) {
