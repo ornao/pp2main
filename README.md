@@ -77,6 +77,22 @@ The game consist of the following screens:
 
 ### Wireframes
 
+<details><summary>index.html</summary>
+<img src="assets/docs/wireframes/index.jpg">
+</details>
+<details><summary>level.html</summary>
+<img src="assets/docs/wireframes/level.jpg">
+</details>
+<details><summary>game.html</summary>
+<img src="assets/docs/wireframes/game.jpg">
+</details>
+<details><summary>end.html</summary>
+<img src="assets/docs/wireframes/end.jpg">
+</details>
+<details><summary>feedback form</summary>
+<img src="assets/docs/wireframes/feedback.jpg">
+</details>
+
 ## Technologies Used
 
 ### Languages
