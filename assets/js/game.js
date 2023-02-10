@@ -137,10 +137,14 @@ function selectCountry(event) {
         selectedChoice.classList.add(classToApply);
         increaseScore(clickCounter);
         correctCountrySelected();
-        getNewQuestion();
-        clickCounter = 0;
-        selectedChoice.classList.remove(classToApply);
-        resetReds();
+        // need to wait for a second
+        setTimeout(() => {
+            getNewQuestion();
+            clickCounter = 0;
+            resetGreens()
+            selectedChoice.classList.remove(classToApply);
+            resetReds();    
+        }, 1000);
     } else if (selectedAnswer) {
         clickCounter++;
         classToApply = "wrong";
@@ -182,6 +186,13 @@ function selectCountry(event) {
 
     function resetReds() {
         let incorrectColor = document.getElementsByClassName('wrong');
+        for (let i = 0; i < incorrectColor.length; i++) {
+            incorrectColor[i].style.fill = "#BEE0EF";
+        }
+    }
+    
+    function resetGreens() {
+        let incorrectColor = document.getElementsByClassName('correct');
         for (let i = 0; i < incorrectColor.length; i++) {
             incorrectColor[i].style.fill = "#BEE0EF";
         }
