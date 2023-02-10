@@ -9,6 +9,18 @@ scoreMaxQuestions.innerText = `${achievedScore}`;
 const userName = localStorage.getItem('user-name');
 document.getElementById('user-name').textContent = userName;
 
+// function that pulls username, level and score to table 
+
+
+// gameDifficulty = localStorage.getItem('game-difficulty');
+// if(gameDifficulty == 'easy') {
+//   document.getElementById('levelTable').textContent;
+// } else if (gameDifficulty == 'medium') {
+//   document.getElementById('user-name').textContent = userName;
+// } else {
+//     loadHardCountries();
+// }
+
 // function to direct user to level select page once click play again
 document.getElementById("playAgain").onclick = function playAgain () {
     location.href = "level.html";
@@ -29,8 +41,8 @@ document.getElementById("modal_feedback").addEventListener("submit", function(e)
       alert("Please enter your comment or question in the message box");
       form.message.focus();
       e.preventDefault();
-    }
-  }, false);
+    } 
+  });
   
   document.addEventListener("DOMContentLoaded", function() {
     var modalWrapper = document.getElementById("modal_wrapper");
