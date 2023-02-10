@@ -101,4 +101,14 @@ The game consist of the following screens:
 - CSS
 - JavaScript
 
+### Frameworks, Libraries & Tools
+
+- Favicon.io for making the site favicon
+- Font Awesome for main title of game
+- Git was used for version control to push the code to GitHub
+- GitHub was used as a remote repository to store project code
+- Google Fonts
+- Chrome dev tools were used for debugging of the code and check site for responsiveness
+- WC3 Validator, Jigsaw W3 Validator, JShint, Wave Validator and Lighthouse were all used to validate the website
+
 
