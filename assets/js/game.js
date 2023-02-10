@@ -150,6 +150,10 @@ function selectCountry(event) {
         classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
         incorrectCountrySelected();
+        setTimeout(() => {
+            resetReds();
+            selectedChoice.classList.remove(classToApply);
+        }, 1000) 
     } 
 
     maxGuesses();
