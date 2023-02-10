@@ -111,4 +111,23 @@ The game consist of the following screens:
 - Chrome dev tools were used for debugging of the code and check site for responsiveness
 - WC3 Validator, Jigsaw W3 Validator, JShint, Wave Validator and Lighthouse were all used to validate the website
 
+## Features
+
+The website has 4 webpages consisting of a number of particular features
+
+### Home page
+The home page contains:
+- The title of the game (user-stories: 1)
+- A short explanation of how to play (user-stories: 1)
+- An input form for the user to enter their name (user-stories: 2)
+- A start game button
+
+### Standout feature: 
+
+#### Username input
+- For start game button to bring user to next page, the user needs to enter a username of at least 4 characters long into the input field. If the input field is left blank and user clicks out of field, the background of the input field changes to red and the placeholder text changes to remind the user to complete the field. Furthermore, if only 3 letters are entered for example, then a alert message is displayed with message that at least 4 characters long username needs to be chosen. Once a valid username has been provided, the username is displayed next to the user icon on the next screen and user is able to select the difficulty level of the game.
+- Username remains displayed on all game screens
+- (user-stories: 2)
+
+
 
