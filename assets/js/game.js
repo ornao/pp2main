@@ -164,11 +164,12 @@ function selectCountry(event) {
     // function to style country when correctly clicked
     function correctCountrySelected() {
         let correctColor = document.getElementsByClassName('correct');
-        document.getElementById('svg').addEventListener("click", function () {
-            for (let i = 0; i < correctColor.length; i++) {
-                correctColor[i].style.fill = "green";
-            }
-        })
+        for (let i = 0; i < correctColor.length; i++) {
+            correctColor[i].style.fill = "green";
+        }
+        console.log('turning green')
+        // document.getElementById('svg').addEventListener("click", function () {
+        // })
     };
     // function to style country when incorrectly clicked
     function incorrectCountrySelected() {
