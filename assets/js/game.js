@@ -173,10 +173,8 @@ function selectCountry(event) {
             incorrectColor[i].style.fill = "red";
         }
         console.log('tirning red')
-        // document.getElementById('svg').addEventListener("click", function () {
-        // })
     };
-
+// reset the colors back to default when new question comes
     function resetReds() {
         let incorrectColor = document.getElementsByClassName('wrong');
         for (let i = 0; i < incorrectColor.length; i++) {

@@ -181,6 +181,13 @@ The home page contains:
 - Dislays most recent score along with username (user-stories: 2)
 - Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)
 - Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which i wpuld have gotten from local storage but i ran out of time. This will be future features of the website however.  
+
+### Future features 
+- Highscores page
+- Modal to allow user to give me feedback
+- Working zoom function for map
+
+
 ## Validation
 
 ### HTML Validation
@@ -425,7 +432,11 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Bug                                                                                                                                         | Fix                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Colors were not showing up until teh 2nd click(2nd right or wrong answer)            | function was being told needed to be clciked twice to work, removed 2nd onclick to get colors appearing when answers first clicked  |
-| 3 undefined country clicks caused random countries to light up  | added paraeter to else statement abd gicing half the undefined countries a data number of x                                          |
+| 3 undefined country clicks caused random countries to light up  | added parameter to else statement when comparing correct answer through data numbers and giving half the undefined countries a data number of x         |
+end.html page would not load when deployed to github pages | changed pathway to include name of project and that worked |
+colors being persistent and then not showing when clciked | set timeout fucnction so can see country for a sec before disappearing and removing class once new question starts |
+noticed random country appearing when clciking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before
+
   
 
 ## Deployment
