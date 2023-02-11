@@ -180,6 +180,83 @@ The home page contains:
 - Dislays most recent score along with username (user-stories: 2)
 - Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)
 - Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which i wpuld have gotten from local storage but i ran out of time. This will be future features of the website however.  
+## Validation
+
+### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+<details><summary>Index</summary>
+
+</details>
+
+<details><summary>Level</summary>
+
+</details>
+
+<details><summary>Game</summary>
+
+</details>
+
+<details><summary>End</summary>
+
+</details>
+
+<details><summary>404</summary>
+
+</details>
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+Style.css passes with no errors. 
+
+<details><summary>Style.css</summary>
+
+</details>
+
+### JavaScript Validation
+
+JSHint JS Validation Service was used to validate the Javascript files. 
+
+<details><summary>index.js</summary>
+
+</details>
+<details><summary>level.js</summary>
+
+</details>
+<details><summary>game.js</summary>
+
+</details>
+<details><summary>end.js</summary>
+
+</details>
+
+### Accessibility
+
+The WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards.
+
+
+### Performance
+
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+
+## Testing
+
+### Performing tests on various devices
+
+The website was tested using Google Chrome Developer Tools to check responsiveness at different screen sizes. 
+
+The website was tested on the following devices:
+- Macbook Pro 2017
+- OnePlus Nord
+- OnePlus Nord CE 2
+
+### Browser compatibility
+
+- Testing has been carried out on the following browsers:
+  - Googe Chrome 
+  - Safari
+
 
 ### Testing user stories
 
@@ -306,6 +383,8 @@ Was removed as affected integrity of game play.
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 | 404 page | Loading error | User brough to custom 404 page and given option to return to home page | Works as expected |
 
+<details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/404.png">
 
 14. I want user to be able to challenge themselves through different difficulty levels
 
