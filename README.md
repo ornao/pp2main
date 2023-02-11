@@ -163,6 +163,20 @@ The home page contains:
 - Username remains displayed on all game screens
 - (user-stories: 2)
 
+### Level page 
+- Username displayed at top of page (user-stories: 2)
+- buttons to choose difficulty level of game by fetching different json files that contain increasingly difficult questions (user-stories: 3, 14)
+
+### Game page
+- Interactive world map (svg) where the countries are individually defined into paths
+- Heads up display that contains the username as input by user on home page (user-stories: 2), dynamic questions and score counter (user-stories: 6, 8)
+- Question display that updates country every new question to a max of 10. The countries do not repeat. 
+
+### Standout feature: 
+
+###  Interactive world map
+- When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights ip green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
+
 ### Testing user stories
 
 1. I want to easily understand what the game is and how to play the game from the first page
@@ -204,6 +218,35 @@ Medium array loads and medium questions displayed when medium buuton clicked
 Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/hard.png">
 </details>
+
+4. I want incorrect answers to light up red and correct answers to light up green
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
+<img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
+
+5. I want 3 guesses only and then to move onto new screen
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Different difficulty selection buttons | Click easy, medium or hard button | Different questions are loaded from different json files depending on choice | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+
+6. I want to get higher points when i click country correctly first time compared to second and third
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Different difficulty selection buttons | Click easy, medium or hard button | Different questions are loaded from different json files depending on choice | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+
 
 11. I want user to easily understnad how to play game
 
