@@ -2,7 +2,7 @@
   function blurFunction() {
     let input = document.getElementById("username");
     input.style.background = "#FFCCCB";
-    input.style.width = "12rem"
+    input.style.width = "12rem";
     input.placeholder = "    Don't forget your username!";
   }
 // fucntion that removes color and text once clciked again
@@ -11,6 +11,9 @@
     document.getElementById("username").style.background = "#f5fbff";
     input.placeholder = "";
   }
+
+  blurFunction();
+  focusFunction();
 
         // once submit clicked validate user input
         // if right save to local storage and go to next page
@@ -24,5 +27,5 @@
             if (username.length > 3) {
                 localStorage.setItem('user-name', username);
                 location.href = "level.html";
-            } else alert('Please enter a username with at least 4 characters')
-        };
+            } else alert('Please enter a username with at least 4 characters');
+        }

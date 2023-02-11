@@ -1,8 +1,8 @@
 const scoreMaxQuestions = document.getElementById('scoreMaxQuestions');
-const MAX_QUESTIONS = 10;
 const achievedScore = localStorage.getItem('achievedScore'); 
+
+// get user's score to appear on this page by using local storage again
 scoreMaxQuestions.innerText = `${achievedScore}`;
-// scoreMaxQuestions.innerText = `${achievedScore}/${MAX_QUESTIONS}`;
 
 // function that loads user input on home page from local storage 
 // into designated field in different html files

@@ -143,6 +143,7 @@ The game consist of the following screens:
 - Google Fonts
 - Chrome dev tools were used for debugging of the code and check site for responsiveness
 - WC3 Validator, Jigsaw W3 Validator, JShint, Wave Validator and Lighthouse were all used to validate the website
+- Befunky to add text to screenshots
 
 ## Features
 
@@ -211,8 +212,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 Style.css passes with no errors. 
 
 <details><summary>Style.css</summary>
-
-</details>
+<img src="assets/docs/validation_screenshots/stylecss.png">
 
 ### JavaScript Validation
 
