@@ -101,7 +101,7 @@ function getNewQuestion() {
     // when reach 10/10 questions go to end page
     if (availableCountries.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('achievedScore', scoreUpdate);
-        location.href = "end.html";
+        return location.href = "/pp2main/end.html";
     }
     // increase question by 1
     questionCounter++;
