@@ -158,13 +158,6 @@ function selectCountry(event) {
 
     maxGuesses();
 
-    // when reach max guesses move to new question and remove all guesses from map
-    // if (clickCounter >= MAX_ATTEMPTS) {
-    //     getNewQuestion();
-    //     selectedChoice.classList.remove(classToApply)
-
-    // }
-
     // function to style country when correctly clicked
     function correctCountrySelected() {
         let correctColor = document.getElementsByClassName('correct');
@@ -172,8 +165,6 @@ function selectCountry(event) {
             correctColor[i].style.fill = "green";
         }
         console.log('turning green')
-        // document.getElementById('svg').addEventListener("click", function () {
-        // })
     };
     // function to style country when incorrectly clicked
     function incorrectCountrySelected() {
@@ -185,10 +176,6 @@ function selectCountry(event) {
         // document.getElementById('svg').addEventListener("click", function () {
         // })
     };
-
-    const firstAttemptBonus = 3;
-    const secondAttemptBonus = 2;
-    const thirdAttemptBonus = 1;
 
     function resetReds() {
         let incorrectColor = document.getElementsByClassName('wrong');
@@ -214,15 +201,7 @@ function selectCountry(event) {
             
         }
 
-        // document.addEventListener('click', function (event) {
-        //     if (event.target.classList.contains('wrong')) {
-        //         // when reach 3/3 attempts move onto next question without points
-
-        //     }
-        // })
     }
-
-    
 
     // function to increase score by bonus amount
     function increaseScore(clickCounts) {
