@@ -81,11 +81,10 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 
 ### Site Owner
 
-11. I want user to easily understnad how to play game
+11. I want user to easily understand how to play game
 12. I want quiz be resposnsive on different devices
 13. I want a 404 page to show in case of broken link
 14. I want user to be able to challenge themselves through different difficulty levels
-15. I want user to contact me with feedback on how they found the game and how to improve
 
 ## Design
 
@@ -178,7 +177,9 @@ The home page contains:
 - When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights ip green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
 
 ### End page 
-- 
+- Dislays most recent score along with username (user-stories: 2)
+- Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)
+- Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which i wpuld have gotten from local storage but i ran out of time. This will be future features of the website however.  
 
 ### Testing user stories
 
@@ -234,7 +235,6 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
 <img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
 
-
 5. I want 3 guesses only and then to move onto new question
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -257,9 +257,16 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
 
-<details><summary>Screenshot</summary>
-<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+7. I want to play game on phone and on laptop 
 
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/3points.png">
+<img src="assets/docs/readme_screenshots/userstories/2points.png">
+<img src="assets/docs/readme_screenshots/userstories/1point.png">
 
 11. I want user to easily understnad how to play game
 

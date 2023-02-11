@@ -40,37 +40,37 @@ function loadEasyCountries() {
 // medium level
 function loadMediumCountries() {
     fetch("countriesMedium.json")
-    .then(res => {
-        return res.json();
-    })
-    .then(loadedCountries => {
-        console.log(loadedCountries);
-        countriesMedium = loadedCountries;
-        startGame('medium');
-    })
-    .catch(err => {
-        console.error(err);
-    });
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedCountries => {
+            console.log(loadedCountries);
+            countriesMedium = loadedCountries;
+            startGame('medium');
+        })
+        .catch(err => {
+            console.error(err);
+        });
 }
 
 // hard level
 function loadHardCountries() {
     fetch("countriesHard.json")
-    .then(res => {
-        return res.json();
-    })
-    .then(loadedCountries => {
-        console.log(loadedCountries);
-        countriesHard = loadedCountries;
-        startGame('hard');
-    })
-    .catch(err => {
-        console.error(err);
-    });
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedCountries => {
+            console.log(loadedCountries);
+            countriesHard = loadedCountries;
+            startGame('hard');
+        })
+        .catch(err => {
+            console.error(err);
+        });
 }
 
 gameDifficulty = localStorage.getItem('game-difficulty');
-if(gameDifficulty == 'easy') {
+if (gameDifficulty == 'easy') {
     loadEasyCountries();
 } else if (gameDifficulty == 'medium') {
     loadMediumCountries();
@@ -129,7 +129,7 @@ function selectCountry(event) {
     const selectedAnswer = selectedChoice.dataset['number'];
     console.log('selectedAnswer: ', selectedAnswer);
     console.log('currentQuestion.answer: ', currentQuestion.answer);
-    
+
     // if else statement that applies class and checks if the country 
     // selected on the map is the same as the country the question asked
     if (selectedAnswer == currentQuestion.answer) {
@@ -143,7 +143,7 @@ function selectCountry(event) {
             clickCounter = 0;
             resetGreens()
             selectedChoice.classList.remove(classToApply);
-            resetReds();    
+            resetReds();
         }, 1000);
     } else if (selectedAnswer) {
         clickCounter++;
@@ -153,8 +153,8 @@ function selectCountry(event) {
         setTimeout(() => {
             resetReds();
             selectedChoice.classList.remove(classToApply);
-        }, 1000) 
-    } 
+        }, 1000)
+    }
 
     maxGuesses();
 
@@ -183,7 +183,7 @@ function selectCountry(event) {
             incorrectColor[i].style.fill = "#BEE0EF";
         }
     }
-    
+
     function resetGreens() {
         let incorrectColor = document.getElementsByClassName('correct');
         for (let i = 0; i < incorrectColor.length; i++) {
@@ -198,7 +198,7 @@ function selectCountry(event) {
             setTimeout(() => {
                 resetReds();
             }, 1000)
-            
+
         }
 
     }
@@ -219,3 +219,4 @@ function selectCountry(event) {
         scoreDisplay.innerText = scoreUpdate;
     }
 }
+

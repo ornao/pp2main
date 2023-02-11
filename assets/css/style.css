@@ -102,6 +102,17 @@ svg path:hover {
     fill: none;
 }
 
+/* zoom buttons */
+#plus {
+    float: left;
+    font-size: 2.5rem;
+}
+
+#minus {
+    float: right;
+    font-size: 2.5rem;
+}
+
 /* hud */
 
 #hud-container {
