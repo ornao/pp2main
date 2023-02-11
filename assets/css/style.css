@@ -1,3 +1,4 @@
+/* google fonts itim link */
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 * {
@@ -37,13 +38,17 @@ body {
     margin: 1rem;
 }
 
+.container ul li {
+    text-align: justify;
+}
+
 .input {
     width: 10rem;
     height: 2rem;
     border-radius: 0.7rem;
 }
 
-/* BUTTONS */
+/* buttons */
 .button {
     padding: 0.5rem;
     border-radius: 0.7rem;
@@ -98,23 +103,13 @@ svg path:hover {
     padding-right: 5%;
 }
 
+/* class to color countries green or red */
 .wrong {
     fill: none;
 }
 
 .correct {
     fill: none;
-}
-
-/* zoom buttons */
-#plus {
-    float: left;
-    font-size: 2.5rem;
-}
-
-#minus {
-    float: right;
-    font-size: 2.5rem;
 }
 
 /* hud */
