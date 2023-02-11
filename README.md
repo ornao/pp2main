@@ -186,19 +186,19 @@ The home page contains:
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 <details><summary>Index</summary>
-
+<img src="assets/docs/validation_screenshots/indexhtml.png">
 </details>
 
 <details><summary>Level</summary>
-
+<img src="assets/docs/validation_screenshots/levelhtml.png">
 </details>
 
 <details><summary>Game</summary>
-
+<img src="assets/docs/validation_screenshots/gamehtml.png">
 </details>
 
 <details><summary>End</summary>
-
+<img src="assets/docs/validation_screenshots/endhtml.png">
 </details>
 
 <details><summary>404</summary>
@@ -235,6 +235,21 @@ JSHint JS Validation Service was used to validate the Javascript files.
 
 The WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards.
 
+<details><summary>Index</summary>
+<img src="assets/docs/validation_screenshots/indexwave.png">
+</details>
+
+<details><summary>Level</summary>
+<img src="assets/docs/validation_screenshots/levelwave.png">
+</details>
+
+<details><summary>Game</summary>
+<img src="assets/docs/validation_screenshots/gamewave.png">
+</details>
+
+<details><summary>End</summary>
+<img src="assets/docs/validation_screenshots/endwave.png">
+</details>
 
 ### Performance
 

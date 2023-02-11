@@ -74,6 +74,10 @@ body {
     margin-bottom: 1rem;
 }
 
+#questionNumber {
+    font-size: 1.5rem;
+}
+
 /* map */
 
 svg path {
