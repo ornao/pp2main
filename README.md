@@ -177,6 +177,9 @@ The home page contains:
 ###  Interactive world map
 - When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights ip green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
 
+### End page 
+- 
+
 ### Testing user stories
 
 1. I want to easily understand what the game is and how to play the game from the first page
@@ -225,9 +228,12 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
+# Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
+
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
 <img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
+
 
 5. I want 3 guesses only and then to move onto new question
 
