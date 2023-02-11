@@ -261,14 +261,30 @@ Hard array loads and hard questions displayed when hard buuton clicked
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Works as expected |
+| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Zoom did not work as expected as started to log different countries as dimensions as map changing. Decided to remove zoom function and did not have time to redo code correctly |
+
+8. I want score and question number I am on to be displayed as I play the game
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Heads up Display | Play game | score and questions update dynamically | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/3points.png">
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
 
-11. I want user to easily understnad how to play game
+9. I want to be able to zoom into map so I am able to click correct country even if small
+
+Was removed as affected integrity of game play.
+
+10. I want play again button at end of quiz and be able to change difficulty level for new game
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Play again button | Press the button | User is brough back to difficulty selection page | Works as expected |
+
+11. I want user to easily understand how to play game
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
@@ -277,6 +293,19 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/titleandexplanation.png">
 </details>
+
+12. I want quiz be resposnsive on different devices 
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Zoom did not work as expected as started to log different countries as dimensions as map changing. Decided to remove zoom function and did not have time to redo code correctly |
+
+13. I want a 404 page to show in case of broken link
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| 404 page | Loading error | User brough to custom 404 page and given option to return to home page | Works as expected |
+
 
 14. I want user to be able to challenge themselves through different difficulty levels
 
