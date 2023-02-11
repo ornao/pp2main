@@ -253,7 +253,7 @@ The WAVE accessibility evaluation tool was used to ensure the website met high a
 
 ### Performance
 
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. Every page scored in the high 90s for mobile and desktop. 
 
 ## Testing
 
@@ -419,5 +419,50 @@ Medium array loads and medium questions displayed when medium buuton clicked
 Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/hard.png">
 </details>
+
+## Bugs
+
+| Bug                                                                                                                                         | Fix                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Colors were not showing up until teh 2nd click(2nd right or wrong answer)            | function was being told needed to be clciked twice to work, removed 2nd onclick to get colors appearing when answers first clicked  |
+| 3 undefined country clicks caused random countries to light up  | added paraeter to else statement abd gicing half the undefined countries a data number of x                                          |
+  
+
+## Deployment
+
+### GitHub Pages
+The website was deployed using GitHub Pages:
+1. In git hub, go to settings tab
+2. On the left hand menu, select Pages
+3. For the source select Branch: main
+4. Once saved, GitHub will refresh and your website will be publishd from GitHub repository
+5. The link to your published website will appear after a minute or two
+
+## Credits
+
+### Images
+
+Interactive World Map
+
+[Simple Maps](https://simplemaps.com/resources/svg-world)
+
+
+### Code
+
+Interactive World Map 
+
+[Make a Clickable SVG Map using HTML & CSS](https://youtu.be/l-9YQUmTOdI) 
+
+[Help with understand how to create a game quiz using HTML, CSS, JS - JAMES Q QUICK youtube channel](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) 
+
+[How to save to local storage](https://www.youtube.com/watch?v=x0VcigW9kN0) 
+
+[Understanding e target](https://softauthor.com/e-target-in-javascript/)
+
+Specific ode used mentioned throughout 
+
+## Acknowledgements
+
+My wonderful and patient boyfriend for helping me with testing 
 
 
