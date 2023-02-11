@@ -229,20 +229,27 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
 <img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
 
-5. I want 3 guesses only and then to move onto new screen
+5. I want 3 guesses only and then to move onto new question
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Different difficulty selection buttons | Click easy, medium or hard button | Different questions are loaded from different json files depending on choice | Works as expected |
+| Interactive world map | Click wrong country 3 times | Move to new question | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/1_3wronganswer.png">
+<img src="assets/docs/readme_screenshots/userstories/2_3wronganswer.png">
+<img src="assets/docs/readme_screenshots/userstories/3_3wronganswer.png">
 
 6. I want to get higher points when i click country correctly first time compared to second and third
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Different difficulty selection buttons | Click easy, medium or hard button | Different questions are loaded from different json files depending on choice | Works as expected |
+| Interactive world map | Click right answer on 1st attempt, then on 2nd for next question and then on 3rd for next question | Points should go up by 3, 2, 1 respectively | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/3points.png">
+<img src="assets/docs/readme_screenshots/userstories/2points.png">
+<img src="assets/docs/readme_screenshots/userstories/1point.png">
 
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
