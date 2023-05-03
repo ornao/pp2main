@@ -220,6 +220,7 @@ Style.css passes with no errors.
 
 <details><summary>Style.css</summary>
 <img src="assets/docs/validation_screenshots/stylecss.png">
+</details>
 
 ### JavaScript Validation
 
@@ -333,7 +334,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
 <img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
-
+</details>
 5. I want 3 guesses only and then to move onto new question
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -344,7 +345,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/1_3wronganswer.png">
 <img src="assets/docs/readme_screenshots/userstories/2_3wronganswer.png">
 <img src="assets/docs/readme_screenshots/userstories/3_3wronganswer.png">
-
+</details>
 6. I want to get higher points when i click country correctly first time compared to second and third
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -355,7 +356,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/3points.png">
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
-
+</details>
 7. I want to play game on phone and on laptop 
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -372,7 +373,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/3points.png">
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
-
+</details>
 9. I want to be able to zoom into map so I am able to click correct country even if small
 
 Was removed as affected integrity of game play.
@@ -407,7 +408,7 @@ Was removed as affected integrity of game play.
 
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/404.png">
-
+</details>
 14. I want user to be able to challenge themselves through different difficulty levels
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -416,7 +417,7 @@ Was removed as affected integrity of game play.
 
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
-
+</details>
 Easy array loads and easy questions displayed when easy buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/easy.png">
 
