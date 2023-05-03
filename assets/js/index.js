@@ -26,3 +26,10 @@ const form = document.getElementById("form"); form.addEventListener('submit', va
         location.href = "level.html";
       } else alert('Please enter a username with at least 4 characters'); 
   }
+
+  // added to help code pass through js.hint
+  // calling functions caused bug in display of username input box 
+  // the box became invisible which lead users not being able to access game 
+  // function is called in index.html file 
+  console.log(focusFunction);
+  console.log(blurFunction);
