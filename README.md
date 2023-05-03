@@ -1,6 +1,11 @@
+<h1>Where in The World?</h1>
+<h2>Submission for portfolio project 2</h2>
+
+<img src = assets/docs/readme_screenshots/earthcute.jpg width="300" height="300">
+
 ** Developer: Orna Reynolds **
 
-[Visit live website]()
+[Visit live website](https://ornao.github.io/pp2main/)
 
 
 ## Table of Content
@@ -458,6 +463,7 @@ Interactive World Map
 
 [Simple Maps](https://simplemaps.com/resources/svg-world)
 
+[Image of earth at top of readme file from freepik](https://www.freepik.com/free-psd/3d-icon-render-vegan-lifestyle_31260449.htm#query=world%20emoji&position=7&from_view=search&track=ais)
 
 ### Code
 
