@@ -1,6 +1,5 @@
 const userName = localStorage.getItem('user-name');
-const country = document.getElementById('country')
-const atlas = document.getElementById('mapdiv');
+const country = document.getElementById('country');
 const questionNumber = document.getElementById("questionNumber");
 const scoreDisplay = document.getElementById('score');
 
@@ -13,6 +12,7 @@ let scoreUpdate = 0;
 let countriesEasy = [];
 let countriesMedium = [];
 let countriesHard = [];
+let bonusAmount = [];
 
 const MAX_ATTEMPTS = 3;
 
@@ -69,7 +69,7 @@ function loadHardCountries() {
         });
 }
 
-gameDifficulty = localStorage.getItem('game-difficulty');
+let gameDifficulty = localStorage.getItem('game-difficulty');
 if (gameDifficulty == 'easy') {
     loadEasyCountries();
 } else if (gameDifficulty == 'medium') {
@@ -95,13 +95,13 @@ function startGame(difficulty) {
 
     getNewQuestion();
 
-};
+}
 
 function getNewQuestion() {
     // when reach 10/10 questions go to end page
     if (availableCountries.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('achievedScore', scoreUpdate);
-        return location.href = "/pp2main/end.html";
+    		location.href = "/pp2main/end.html";
     }
     // increase question by 1
     questionCounter++;
@@ -114,26 +114,26 @@ function getNewQuestion() {
     country.innerText = currentQuestion.country;
     // takes away a country name from list once used so countries do not repeat
     availableCountries.splice(questionIndex, 1);
-};
+}
 
 // dom reference to svg map
 const map = document.getElementById("svg");
 // trigger an event
-svg.addEventListener('click', selectCountry);
+map.addEventListener('click', selectCountry);
 // declare a call back function when svg map is clicked
 // have event hold the object
 function selectCountry(event) {
-    console.log('svg clicked')
+    console.log('svg clicked');
 
     const selectedChoice = event.target;
-    const selectedAnswer = selectedChoice.dataset['number'];
+    const selectedAnswer = selectedChoice.dataset.number;
     console.log('selectedAnswer: ', selectedAnswer);
     console.log('currentQuestion.answer: ', currentQuestion.answer);
 
     // if else statement that applies class and checks if the country 
     // selected on the map is the same as the country the question asked
     if (selectedAnswer == currentQuestion.answer) {
-        classToApply = "correct";
+        let classToApply = "correct";
         selectedChoice.classList.add(classToApply);
         increaseScore(clickCounter);
         correctCountrySelected();
@@ -141,19 +141,19 @@ function selectCountry(event) {
         setTimeout(() => {
             getNewQuestion();
             clickCounter = 0;
-            resetGreens()
+            resetGreens();
             selectedChoice.classList.remove(classToApply);
             resetReds();
         }, 1000);
     } else if (selectedAnswer) {
         clickCounter++;
-        classToApply = "wrong";
+        let classToApply = "wrong";
         selectedChoice.classList.add(classToApply);
         incorrectCountrySelected();
         setTimeout(() => {
             resetReds();
             selectedChoice.classList.remove(classToApply);
-        }, 1000)
+        }, 1000);
     }
 
     maxGuesses();
@@ -164,16 +164,16 @@ function selectCountry(event) {
         for (let i = 0; i < correctColor.length; i++) {
             correctColor[i].style.fill = "green";
         }
-        console.log('turning green')
-    };
+        console.log('turning green');
+    }
     // function to style country when incorrectly clicked
     function incorrectCountrySelected() {
         let incorrectColor = document.getElementsByClassName('wrong');
         for (let i = 0; i < incorrectColor.length; i++) {
             incorrectColor[i].style.fill = "red";
         }
-        console.log('tirning red')
-    };
+        console.log('tirning red');
+    }
 // reset the colors back to default when new question comes
     function resetReds() {
         let incorrectColor = document.getElementsByClassName('wrong');
@@ -195,7 +195,7 @@ function selectCountry(event) {
             getNewQuestion();
             setTimeout(() => {
                 resetReds();
-            }, 1000)
+            }, 1000);
 
         }
 
@@ -217,4 +217,5 @@ function selectCountry(event) {
         scoreDisplay.innerText = scoreUpdate;
     }
 }
+
 

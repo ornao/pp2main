@@ -127,3 +127,7 @@ svg path:hover {
 #userIcon {
     font-size: 2.5rem;
 }
+
+#homeButton {
+    justify-content: left;
+}
