@@ -268,22 +268,34 @@ The WAVE accessibility evaluation tool was used to ensure the website met high a
 
 ### Performance
 
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. Every page scored in the high 90s for mobile and desktop. 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. Every page scored over 90 for mobile and desktop bar game.html for mobile testing - it received 88. 
 
 <details><summary>Index</summary>
-<img src="">
+Desktop:
+<img src="assets/docs/validation_screenshots/index_lighthouse_desktop.png">
+Mobile:
+<img src="assets/docs/validation_screenshots/index_lighhouse_phone.png">
 </details>
 
 <details><summary>Level</summary>
-<img src="">
+Desktop:
+<img src="assets/docs/validation_screenshots/level_lighthouse_desktop.png">
+Mobile:
+<img src="assets/docs/validation_screenshots/level_lighthouse_phone.png">
 </details>
 
 <details><summary>Game</summary>
-<img src="">
+Desktop:
+<img src="assets/docs/validation_screenshots/game_lighthouse_desktop.png">
+Mobile:
+<img src="assets/docs/validation_screenshots/game_lighthouse_phone.png">
 </details>
 
 <details><summary>End</summary>
-<img src="">
+Desktop:
+<img src="assets/docs/validation_screenshots/end_lighthouse_desktop.png">
+Mobile:
+<img src="assets/docs/validation_screenshots/end_lighthouse_phone.png">
 </details>
 
 ## Testing
