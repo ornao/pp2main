@@ -1,6 +1,6 @@
 const userName = localStorage.getItem('user-name');
 const country = document.getElementById('country');
-const questionNumber = document.getElementById("questionNumber");
+const questionNumber = document.getElementById("question-number");
 const scoreDisplay = document.getElementById('score');
 
 document.getElementById('user-name').textContent = userName;

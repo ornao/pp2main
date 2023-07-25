@@ -79,7 +79,7 @@ body {
     margin-bottom: 1rem;
 }
 
-#questionNumber {
+#question-number {
     font-size: 1.5rem;
 }
 
@@ -124,10 +124,10 @@ svg path:hover {
     padding: 1rem;
 }
 
-#userIcon {
+#user-icon {
     font-size: 2.5rem;
 }
 
-#homeButton {
+#home-button {
     justify-content: left;
 }
