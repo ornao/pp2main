@@ -167,6 +167,7 @@ The home page contains:
 - For start game button to bring user to next page, the user needs to enter a username of at least 4 characters long into the input field. If the input field is left blank and user clicks out of field, the background of the input field changes to red and the placeholder text changes to remind the user to complete the field. Furthermore, if only 3 letters are entered for example, then a alert message is displayed with message that at least 4 characters long username needs to be chosen. Once a valid username has been provided, the username is displayed next to the user icon on the next screen and user is able to select the difficulty level of the game.
 - Username remains displayed on all game screens
 - (user-stories: 2)
+- I encountered a bug that with this aspect of my first submission for this project. JShint through an error that neither function was called hence I called the function to make the js valid. However this led to the username input box becoming invisible to the user of my first submission resulting in a fail. I have now instead console.log the function name as a workaround to this bug and also to make the js valid concurrently. 
 
 ### Level page 
 - Username displayed at top of page (user-stories: 2)
@@ -183,9 +184,9 @@ The home page contains:
 - When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights ip green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
 
 ### End page 
-- Dislays most recent score along with username (user-stories: 2)
+- Displays most recent score along with username (user-stories: 2)
 - Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)
-- Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which i wpuld have gotten from local storage but i ran out of time. This will be future features of the website however.  
+- Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which I would have gotten from local storage but i ran out of time in my first submission and I felt disheartened on 2nd submission to make any improvements as all the work I put in first time round was not fully appreciated due to minor blunders on my part. This will be future features of the website however if I choose to look at it again after the course.  
 
 ### Future features 
 - Highscores page
@@ -246,7 +247,7 @@ JSHint JS Validation Service was used to validate the Javascript files.
 
 ### Accessibility
 
-The WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards.
+The WAVE accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages passed with no errors. 
 
 <details><summary>Index</summary>
 <img src="assets/docs/validation_screenshots/indexwave.png">
@@ -267,6 +268,22 @@ The WAVE accessibility evaluation tool was used to ensure the website met high a
 ### Performance
 
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. Every page scored in the high 90s for mobile and desktop. 
+
+<details><summary>Index</summary>
+<img src="">
+</details>
+
+<details><summary>Level</summary>
+<img src="">
+</details>
+
+<details><summary>Game</summary>
+<img src="">
+</details>
+
+<details><summary>End</summary>
+<img src="">
+</details>
 
 ## Testing
 
