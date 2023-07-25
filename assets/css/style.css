@@ -129,5 +129,6 @@ svg path:hover {
 }
 
 #home-button {
-    justify-content: left;
+    font-size: 2.5rem;
+    color: black;
 }
