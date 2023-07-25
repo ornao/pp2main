@@ -25,10 +25,10 @@ body {
 /* media query for responsiveness */
 @media only screen and (max-width: 780px) {
     .container {
-      padding: 15%;
-      text-align: center;
+        padding: 15%;
+        text-align: center;
     }
-  }
+}
 
 .container h1 {
     margin: 1rem;
@@ -124,13 +124,13 @@ svg path:hover {
     padding: 1rem;
 }
 
-
-#user-icon, #user-name {
+#user-icon,
+#user-name {
     font-size: 1.5rem;
 }
 
 #home-button {
     font-size: 1.5rem;
     color: black;
-    
+
 }

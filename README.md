@@ -200,23 +200,24 @@ The home page contains:
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 <details><summary>Index</summary>
-<img src="assets/docs/validation_screenshots/indexhtml.png">
+<img src="assets/docs/validation_screenshots/indexhtmlx.png">
 </details>
 
 <details><summary>Level</summary>
-<img src="assets/docs/validation_screenshots/levelhtml.png">
+<img src="assets/docs/validation_screenshots/levelhtmlx.png">
 </details>
 
 <details><summary>Game</summary>
-<img src="assets/docs/validation_screenshots/gamehtml.png">
+- 3rd party code was utilised in game.html which had a number of errors, did not correct in fear of breaking functionality
 </details>
 
 <details><summary>End</summary>
-<img src="assets/docs/validation_screenshots/endhtml.png">
+<img src="assets/docs/validation_screenshots/endhtmlx.png">
 </details>
 
 <details><summary>404</summary>
-
+- 3rd party code was utilised in 404.html but did not have any major issues 
+<img src="assets/docs/validation_screenshots/404html.png">
 </details>
 
 ### CSS Validation
