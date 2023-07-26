@@ -388,6 +388,10 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
 # Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
+- this is a remanent of my original submission as I could not figure out why why readmefile was not appearing in preview and git hub pages. It turns out I was missing a closing </details> tag for one of my dropdowns and as a result when viewing my orgina submission readme file one need to open up all my dropdowns to view the content and testing that i had done on form this. Very frustrating to this simple missing tag resulted in me failing my original submission even tho my content was all there including the deployment which was hyperfocused on in my orginal submission. 
+
+I even raising this issue in github on submission hoping all my work would be visible to be examined
+<img src="assets/docs/readme_screenshots/userstories/issuereadmefile.png">
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
@@ -510,7 +514,6 @@ Hard array loads and hard questions displayed when hard buuton clicked
 
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/buttonchoose.png">
-</details>
 Easy array loads and easy questions displayed when easy buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/easy.png">
 
@@ -566,10 +569,16 @@ Interactive World Map
 
 [Understanding e target](https://softauthor.com/e-target-in-javascript/)
 
-Specific ode used mentioned throughout 
+[Zoom and pan functionality](https://onestepcode.com/zoom-pan-effect-svg/)
+
+Specific code used mentioned throughout 
 
 ## Acknowledgements
 
 My wonderful and patient boyfriend for helping me with testing 
+
+## PP2 experience
+
+What I have taken from the pp2 experience is frustration and a bit of a distain for javascript. My blunders were missing a closing </details> tag, my inability to configure JSHint correctly by clicking a tab and the calling versus logging of the usernameinput functions when only trying my best to validate the index.js file. These blunders while frustrating and small did result in much larger consequences. As a result of the missing closing tag, my whole readme file did not display which meant it was harder to see all the work I had put in in my readme file and it was harder to see all the assessmnet criteria boxes I had fulfilled . As a result of my blunder over the correct configuration of JSHint, I did not see the errors which were in the end so easy to fix (adding missing semicolons and fixing undefined by adding let to preexisting code). As a result of following JSHint errors mesages in what I deemed at time appropriate(calling functions in file), I caused a bug that did make it almost impossible for users to play the game I spent many nights tinkering and tweaking trying to get to work. I am really dissappointed with the result of my first submission abut I can understand how the combination of the last two led to my fail. 
 
 
