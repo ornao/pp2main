@@ -114,6 +114,7 @@ function getNewQuestion() {
     country.innerText = currentQuestion.country;
     // takes away a country name from list once used so countries do not repeat
     availableCountries.splice(questionIndex, 1);
+    resetMap();
 }
 
 // dom reference to svg map
@@ -221,7 +222,6 @@ function selectCountry(event) {
 
 
 // code taken from one step code which allowed for smooth zooming and panning of svg 
-// 
 const svg = document.getElementById("svg");
 
 const zoom = (direction) => {
@@ -272,7 +272,7 @@ const pan = (direction) => {
 
 // i added this function to get map to reset when button clicked 
 let defaultTransform = getTransformParameters(svg);
-const reset = () => {
+function resetMap() {
     svg.style.transform = getTransformString(defaultTransform.scale, defaultTransform.x, defaultTransform.y);
   };
 
@@ -283,4 +283,3 @@ document.getElementById("left-button").onclick = () => pan("left");
 document.getElementById("right-button").onclick = () => pan("right");
 document.getElementById("up-button").onclick = () => pan("up");
 document.getElementById("down-button").onclick = () => pan("down");
-document.getElementById("reset-button").onclick = reset;
