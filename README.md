@@ -415,11 +415,19 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
 </details>
+
 7. I want to play game on phone and on laptop 
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Zoom did not work as expected as started to log different countries as dimensions as map changing. Decided to remove zoom function and did not have time to redo code correctly |
+| Responsiveness on different devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | All provided button for map controls work as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
+
+</details>
 
 8. I want score and question number I am on to be displayed as I play the game
 
@@ -432,9 +440,19 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/2points.png">
 <img src="assets/docs/readme_screenshots/userstories/1point.png">
 </details>
+
 9. I want to be able to zoom into map so I am able to click correct country even if small
 
-Was removed as affected integrity of game play.
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+| Zoom button | Click map controls buttons provided to zoom and pan across map | Zoom and pan using controls of map should allow user to click the smallest of countries without trouble | All provided button for map controls work as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
+
+</details>
 
 10. I want play again button at end of quiz and be able to change difficulty level for new game
 
@@ -452,11 +470,18 @@ Was removed as affected integrity of game play.
 <img src="assets/docs/readme_screenshots/userstories/titleandexplanation.png">
 </details>
 
-12. I want quiz be resposnsive on different devices 
+12. I want quiz be responsive on different devices 
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | Zoom did not work as expected as started to log different countries as dimensions as map changing. Decided to remove zoom function and did not have time to redo code correctly |
+| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | All provided button for map controls work as expected |
+
+<details><summary>Screenshots</summary>
+<img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
+<img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
+
+</details>
 
 13. I want a 404 page to show in case of broken link
 
