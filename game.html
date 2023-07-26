@@ -49,12 +49,14 @@
   <section>
     <!-- where countries from json files are loaded to -->
     <h2 id="question"> Where is <span id="country"></span> ?</h2>
-    <button id="zoom-in-button">zoom-in</button>
-    <button id="zoom-out-button">zoom-out</button>
-    <button id="left-button">Left</button>
-    <button id="right-button">Right</button>
-    <button id="up-button">Up</button>
-    <button id="down-button">Down</button>
+    <div id="mapcontrols">
+      <button id="zoom-in-button"><i class="fa-solid fa-circle-plus"></i></button>
+      <button id="zoom-out-button"><i class="fa-solid fa-circle-minus"></i></button>
+      <button id="left-button"><i class="fa-solid fa-circle-arrow-left"></i></button>
+      <button id="right-button"><i class="fa-solid fa-circle-arrow-right"></i></button>
+      <button id="up-button"><i class="fa-solid fa-circle-arrow-up"></i></button>
+      <button id="down-button"><i class="fa-solid fa-circle-arrow-down"></i></button>
+    </div>
     <!-- svg map  -->
     <div id="mapdiv">
       <?xml version="1.0"?>

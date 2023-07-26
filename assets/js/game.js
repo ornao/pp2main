@@ -221,7 +221,7 @@ function selectCountry(event) {
 
 
 // code taken from one step code which allowed for smooth zooming and panning of svg 
-
+// 
 const svg = document.getElementById("svg");
 const zoom = (direction) => {
   const { scale, x, y } = getTransformParameters(svg);
