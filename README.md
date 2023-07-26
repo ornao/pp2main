@@ -406,9 +406,9 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
 # Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
-- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing "details" tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns or look at raw data of readme file to view the content, testing and deployment section that I had done from this point on.
+- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing "details" tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns or look at raw data of readme file to view the content, testing and deployment section that I had done from this point on. Hence, readme file appeared to stop at this point on original submission even tho all the content on from here was included.
 
-I raised this issue in github on submission hoping all my work would be visible to be examined.
+I raised this issue in github on orginal submission day hoping all my work would be visible to be examined.
 <img src="assets/docs/readme_screenshots/userstories/issuereadmefile.png">
 
 
@@ -570,11 +570,14 @@ noticed random country appearing when clicking guesses again when going fast thr
 
 ### GitHub Pages
 The website was deployed using GitHub Pages:
-1. In git hub, go to settings tab
-2. On the left hand menu, select Pages
-3. For the source select Branch: main
-4. Once saved, GitHub will refresh and your website will be publishd from GitHub repository
+1. In github in repositories, select pp2main
+2. From here go to settings tab which is on top of screen 
+2. Then on the left hand menu, select Pages
+3. For the source, select Branch: main in dropdown
+4. Once saved, GitHub will refresh and your website will be published from GitHub repository
 5. The link to your published website will appear after a minute or two
+
+[Visit live website](https://ornao.github.io/pp2main/)
 
 ## Credits
 
