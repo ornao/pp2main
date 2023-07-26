@@ -28,7 +28,6 @@ function loadEasyCountries() {
             return res.json();
         })
         .then(loadedCountries => {
-            console.log(loadedCountries);
             countriesEasy = loadedCountries;
             startGame('easy');
         })
@@ -44,7 +43,6 @@ function loadMediumCountries() {
             return res.json();
         })
         .then(loadedCountries => {
-            console.log(loadedCountries);
             countriesMedium = loadedCountries;
             startGame('medium');
         })
@@ -60,7 +58,6 @@ function loadHardCountries() {
             return res.json();
         })
         .then(loadedCountries => {
-            console.log(loadedCountries);
             countriesHard = loadedCountries;
             startGame('hard');
         })
@@ -124,12 +121,9 @@ map.addEventListener('click', selectCountry);
 // declare a call back function when svg map is clicked
 // have event hold the object
 function selectCountry(event) {
-    console.log('svg clicked');
 
     const selectedChoice = event.target;
     const selectedAnswer = selectedChoice.dataset.number;
-    console.log('selectedAnswer: ', selectedAnswer);
-    console.log('currentQuestion.answer: ', currentQuestion.answer);
 
     // if else statement that applies class and checks if the country 
     // selected on the map is the same as the country the question asked
@@ -165,7 +159,6 @@ function selectCountry(event) {
         for (let i = 0; i < correctColor.length; i++) {
             correctColor[i].style.fill = "green";
         }
-        console.log('turning green');
     }
     // function to style country when incorrectly clicked
     function incorrectCountrySelected() {
@@ -173,7 +166,6 @@ function selectCountry(event) {
         for (let i = 0; i < incorrectColor.length; i++) {
             incorrectColor[i].style.fill = "red";
         }
-        console.log('tirning red');
     }
 // reset the colors back to default when new question comes
     function resetReds() {
