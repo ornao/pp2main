@@ -54,7 +54,7 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 ### Site Owner Goals
 
 - Create a quiz with accurate information on world geography
-- Design a quiz to visually apeal and engage the user
+- Design a quiz to visually appeal and engage the user
 - Ensure accessibility and responsivity across different screen sizes
 
 ## User Experience
@@ -66,7 +66,7 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 
 ### User Requirements and Expectations
 
-- Simple, clear and interative layout 
+- Simple, clear and interactive layout 
 - Responsiveness across different screen levels 
 - Visible navigation to different difficulty levels, reset button
 
@@ -87,7 +87,7 @@ The goal of this project was to create an interactive and user-friendly quiz tha
 ### Site Owner
 
 11. I want user to easily understand how to play game
-12. I want quiz be resposnsive on different devices
+12. I want quiz be responsive on different devices
 13. I want a 404 page to show in case of broken link
 14. I want user to be able to challenge themselves through different difficulty levels
 
@@ -110,22 +110,25 @@ The game consist of the following screens:
 - Choose game difficulty level screen with name displayed in top corner of screen
 - Main game screen - it contains interactive map to click, questions clearly displayed, number of questions remaining in the round and current score which dynamically updates
 - End page with most recent score from local storage
-- The contact page modal with contact form which allows users to send an email to the developer and provide their feedback
 - A separate 404 error page
 
 ### Wireframes
 
 <details><summary>index.html</summary>
 <img src="assets/docs/wireframes/index.jpg">
+<img src="assets/docs/readme_screenshots/homepage.png">
 </details>
 <details><summary>level.html</summary>
 <img src="assets/docs/wireframes/level.jpg">
+<img src="assets/docs/readme_screenshots/levelpage.png">
 </details>
 <details><summary>game.html</summary>
 <img src="assets/docs/wireframes/game.jpg">
+<img src="assets/docs/readme_screenshots/gamepage.png">
 </details>
 <details><summary>end.html</summary>
 <img src="assets/docs/wireframes/end.jpg">
+<img src="assets/docs/readme_screenshots/endpage.png">
 </details>
 <details><summary>feedback form</summary>
 <img src="assets/docs/wireframes/feedback.jpg">
@@ -161,38 +164,51 @@ The home page contains:
 - An input form for the user to enter their name (user-stories: 2)
 - A start game button
 
+<img src="assets/docs/readme_screenshots/homepage.png">
+
 ### Standout feature: 
 
 #### Username input
 - For start game button to bring user to next page, the user needs to enter a username of at least 4 characters long into the input field. If the input field is left blank and user clicks out of field, the background of the input field changes to red and the placeholder text changes to remind the user to complete the field. Furthermore, if only 3 letters are entered for example, then a alert message is displayed with message that at least 4 characters long username needs to be chosen. Once a valid username has been provided, the username is displayed next to the user icon on the next screen and user is able to select the difficulty level of the game.
 - Username remains displayed on all game screens
 - (user-stories: 2)
-- I encountered a bug that with this aspect of my first submission for this project. JShint through an error that neither function was called hence I called the function to make the js valid. However this led to the username input box becoming invisible to the user of my first submission resulting in a fail. I have now instead console.log the function name as a workaround to this bug and also to make the js valid concurrently. 
+- I encountered a bug that with this aspect of my first submission for this project. JShint gave an error that neither function was called hence I called the function to make the js valid. However this led to the username input box becoming invisible to the user of my first submission contributing to the failing grade I received. I have now instead console.log the function name as a workaround to this bug and also to make the js valid concurrently. 
+
+<details><summary>Screenshots</summary>
+
+<img src="assets/docs/readme_screenshots/userstories/input.png">
+<img src="assets/docs/readme_screenshots/userstories/inputred.png">
+
+</details>
 
 ### Level page 
 - Username displayed at top of page (user-stories: 2)
 - buttons to choose difficulty level of game by fetching different json files that contain increasingly difficult questions (user-stories: 3, 14)
+
+<img src="assets/docs/readme_screenshots/levelpage.png">
 
 ### Game page
 - Interactive world map (svg) where the countries are individually defined into paths
 - Heads up display that contains the username as input by user on home page (user-stories: 2), dynamic questions and score counter (user-stories: 6, 8)
 - Question display that updates country every new question to a max of 10. The countries do not repeat. 
 
+<img src="assets/docs/readme_screenshots/gamepage.png">
+
 ### Standout feature: 
 
 ###  Interactive world map
-- When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights ip green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
+- When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights up green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
 
 ### End page 
 - Displays most recent score along with username (user-stories: 2)
-- Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)
-- Wanted to include code for a modal pop up feedback form that was hidden until feedback button was clicked and high scores table which I would have gotten from local storage but i ran out of time in my first submission and I felt disheartened on 2nd submission to make any improvements as all the work I put in first time round was not fully appreciated due to minor blunders on my part. This will be future features of the website however if I choose to look at it again after the course.  
+- Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)  
+
+<img src="assets/docs/readme_screenshots/endpage.png">
 
 ### Future features 
 - Highscores page
 - Modal to allow user to give me feedback
-- Working zoom function for map
-
+- Change alert message when incorrect username entered to something more user friendly 
 
 ## Validation
 
@@ -233,28 +249,30 @@ Style.css passes with no errors.
 
 JSHint JS Validation Service was used to validate the Javascript files. 
 
+In the original validation of index.js, the unused variable error message was raised and hence i called the function at end of file to fix this. However this ultimately caused the bug of my username input not displaying on the home page on original submission and led to my failing result. I had checked before submitting but as sometimes github can be slow updating changes to deployed website I did not realise this bug was present until after submission. I do understand how username input not appearing is obviously very frustrating for the user so I am glad I have found the bug and fixed it in the updated code.  
+
 <details><summary>index.js</summary>
 This was the orignal image included in project with configuration of JSHint not correctly set up:
-<img src="assets/docs/validation_screenshots/endjs.png">
+<img src="assets/docs/validation_screenshots/indexjs.png">
 This is the update version using corrected version of JSHint:
-<img src="assets/docs/validation_screenshots/endjs2.0.png">
+<img src="assets/docs/validation_screenshots/indexjs2.0.png">
+Example of error messge that ultimately caused the bug of my username input not displaying on the home page on orginal submission and led to my fail. The console.log is the simplest, easiest workaround I have found that allows the code to be valid through JSHint and not cause this bug. 
+<img src="assets/docs/validation_screenshots/indexjsbug.png">
 </details>
 
-In the orignal validation of level.js, the unused variable error messge was raised and hence i called the function at end of file to fix this. However this ultimately caused the bug of my username input not displaying on the home page on orginal submission and led to my fail which very much upset me when I realised. I had checked beofre submitting but as sometimes github can be slow updating changes to deployed website I realised too late after submission. At the time I did not think this could result in a fail as I believe all my other work would speak for itself. I do understand how username input not appearing is obviously very frustrating for the user so I am glad i have fould the bug and fixed it. 
 <details><summary>level.js</summary>
 This was the orignal image included in project with configuration of JSHint not correctly set up:
 <img src="assets/docs/validation_screenshots/leveljs.png">
 This is the update version using corrected version of JSHint:
 <img src="assets/docs/validation_screenshots/leveljs2.0.png">
-Example of error messge that ultimately caused the bug of my username input not displaying on the home page on orginal submission and led to my fail. The console.log is the simplest, easiest workaround I have found that allows the code to be valid through JSHint and not cause this bug. 
-<img src="assets/docs/validation_screenshots/leveljsbug.png">
+
 </details>
 
 In the orignal validation of game.js, I had made a blunder with the configuration and hence instead of selecting "New JavaScript features (ES6)" in Assume of Configure in JShint and I had included 
 {
   "esversion": 6
 }
- at the top of file to allow me to use const as instructed by this [SlackOverflow post](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const). However, I was proved very much mistaken by allowing this to be my technique for handling these errors. I mistakenly believe I had no errors in my original submission as a result. 
+ at the top of file to allow me to use const as instructed by this [SlackOverflow post](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const). However, I was proved very much mistaken by allowing this to be my technique for handling these errors. I mistakenly believed I had no errors in my original submission as a result. 
 
 <details><summary>game.js</summary>
 This was the orignal image included in project:
@@ -355,7 +373,7 @@ The website was tested on the following devices:
 
 | **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| Username input | Type user name that is at least over 4 characters and click start game button | User is brough to next page and name is displayed at top of page | Works as expected |
+| Username input | Type user name that is at least over 4 characters and click start game button | User is brought to next page and name is displayed at top of page | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/namedisplaypart1.png">
@@ -388,15 +406,16 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
 # Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
-- this is a remanent of my original submission as I could not figure out why why readmefile was not appearing in preview and git hub pages. It turns out I was missing a closing </details> tag for one of my dropdowns and as a result when viewing my orgina submission readme file one need to open up all my dropdowns to view the content and testing that i had done on form this. Very frustrating to this simple missing tag resulted in me failing my original submission even tho my content was all there including the deployment which was hyperfocused on in my orginal submission. 
+- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing </details> tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns to view the content and testing that i had done from this point on.
 
-I even raising this issue in github on submission hoping all my work would be visible to be examined
+I raised this issue in github on submission hoping all my work would be visible to be examined.
 <img src="assets/docs/readme_screenshots/userstories/issuereadmefile.png">
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
 <img src="assets/docs/readme_screenshots/userstories/incorrectanswer.png">
 </details>
+
 5. I want 3 guesses only and then to move onto new question
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -408,6 +427,7 @@ I even raising this issue in github on submission hoping all my work would be vi
 <img src="assets/docs/readme_screenshots/userstories/2_3wronganswer.png">
 <img src="assets/docs/readme_screenshots/userstories/3_3wronganswer.png">
 </details>
+
 6. I want to get higher points when i click country correctly first time compared to second and third
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -484,7 +504,7 @@ I even raising this issue in github on submission hoping all my work would be vi
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Responsiveness on defferent devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | All provided button for map controls work as expected |
+| Responsiveness on different devices | Play game on different screen widths and devices | All text should be visible and zoom of map should allow user to interactive with the large map when playing on smaller devices | All provided button for map controls work as expected |
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
@@ -528,14 +548,19 @@ Hard array loads and hard questions displayed when hard buuton clicked
 
 | Bug                                                                                                                                         | Fix                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Colors were not showing up until teh 2nd click(2nd right or wrong answer)            | function was being told needed to be clciked twice to work, removed 2nd onclick to get colors appearing when answers first clicked  |
+| Colors were not showing up until the 2nd click(2nd right or wrong answer)            | function was being told needed to be clicked twice to work, removed 2nd onclick to get colors appearing when answers first clicked  |
 | 3 undefined country clicks caused random countries to light up  | added parameter to else statement when comparing correct answer through data numbers and giving half the undefined countries a data number of x         |
 end.html page would not load when deployed to github pages | changed pathway to include name of project and that worked |
-colors being persistent and then not showing when clciked | set timeout fucnction so can see country for a sec before disappearing and removing class once new question starts |
-noticed random country appearing when clciking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before |
+colors being persistent and then not showing when clciked | set timeout function so can see country for a sec before disappearing and removing class once new question starts |
+| username input invisible to user | removed call to function and username displayed input for username once again|
 |controls for map move whole svg and hence when zoomed in it appears right, left and up, down and working backwards |swap left for right and up for down to make buttons more user friendly|
 
-  
+ ### Future Bug fixes |
+| Bug                                                                                                                                         | Possible Fix                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+noticed random country appearing when clicking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before |
+| 4 blank spaces can be entered as username, need to improve validation of username for this |
+
 
 ## Deployment
 
@@ -571,14 +596,11 @@ Interactive World Map
 
 [Zoom and pan functionality](https://onestepcode.com/zoom-pan-effect-svg/)
 
-Specific code used mentioned throughout 
+Specific code used mentioned throughout comments
 
 ## Acknowledgements
 
-My wonderful and patient boyfriend for helping me with testing 
-
-## PP2 experience
-
-What I have taken from the pp2 experience is frustration and a bit of a distain for javascript. My blunders were missing a closing </details> tag, my inability to configure JSHint correctly by clicking a tab and the calling versus logging of the usernameinput functions when only trying my best to validate the index.js file. These blunders while frustrating and small did result in much larger consequences. As a result of the missing closing tag, my whole readme file did not display which meant it was harder to see all the work I had put in in my readme file and it was harder to see all the assessmnet criteria boxes I had fulfilled . As a result of my blunder over the correct configuration of JSHint, I did not see the errors which were in the end so easy to fix (adding missing semicolons and fixing undefined by adding let to preexisting code). As a result of following JSHint errors mesages in what I deemed at time appropriate(calling functions in file), I caused a bug that did make it almost impossible for users to play the game I spent many nights tinkering and tweaking trying to get to work. I am really dissappointed with the result of my first submission abut I can understand how the combination of the last two led to my fail. 
+My wonderful and patient boyfriend for helping me with testing and student care for being very accomodating and flexible regarding my resubmission date
+ 
 
 
