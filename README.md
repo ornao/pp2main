@@ -162,7 +162,7 @@ The home page contains:
 - The title of the game with spinning world icon (user-stories: 1)
 - A short explanation of how to play (user-stories: 1)
 - An input form for the user to enter their name (user-stories: 2)
-- A start game button
+- A start game button to bring user to next page (pick level of game page)
 
 <img src="assets/docs/readme_screenshots/homepage.png">
 
@@ -190,7 +190,7 @@ The home page contains:
 ### Game page
 - Interactive world map (svg) where the countries are individually defined into paths
 - Heads up display that contains the username as input by user on home page (user-stories: 2), dynamic questions and score counter (user-stories: 6, 8)
-- Question display that updates country every new question to a max of 10. The countries do not repeat. 
+- Question display that updates country every new question to a max of 10. The countries do not repeat. This allows user to see how long is left of round
 
 <img src="assets/docs/readme_screenshots/gamepage.png">
 
@@ -200,7 +200,7 @@ The home page contains:
 - When question is asked map can be clicked to try and answer the question. If correct answer is picked, the country lights up green and if the incorrect country is picked the country lights up red (user-stories: 4). A new question appears either if correct country is chosen or user has reached max guesses(3) (user-stories: 5). Scores updates depending on how many guesses it took the user to get the right country (1st attempt = 3 points, 2 attempt = 2 points, 3rd attempt = 1 point) (user-stories: 6)
 
 ### End page 
-- Displays most recent score along with username (user-stories: 2)
+- Displays most recent score along with username (user-stories: 2) to allow user to check how they are getting on with game
 - Play again button that allow user to restart the game by bringing back to select difficulty screen (user-stories: 10)  
 
 <img src="assets/docs/readme_screenshots/endpage.png">
@@ -208,7 +208,7 @@ The home page contains:
 ### Future features 
 - Highscores page
 - Modal to allow user to give me feedback
-- Change alert message when incorrect username entered to something more user friendly 
+- Change alert message when incorrect username entered to something more user friendly like a pop-up
 
 ## Validation
 
@@ -406,10 +406,11 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
 # Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
-- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing </details> tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns to view the content and testing that i had done from this point on.
+- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing "details" tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns or look at raw data of readme file to view the content and testing that I had done from this point on.
 
 I raised this issue in github on submission hoping all my work would be visible to be examined.
 <img src="assets/docs/readme_screenshots/userstories/issuereadmefile.png">
+
 
 <details><summary>Screenshots</summary>
 <img src="assets/docs/readme_screenshots/userstories/correctanswer.png">
