@@ -101,6 +101,7 @@ svg path:hover {
     width: 100%;
     margin: auto;
     padding-right: 5%;
+    overflow: hidden;
 }
 
 /* class to color countries green or red */
