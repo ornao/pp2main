@@ -406,7 +406,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | Interactive world map | Click a country on the map | Light up green or red depending on choice | Works as expected |
 
 # Go in readme file itself or raw data to see rest of readme file is not showing here in preview or github preview for some reason
-- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing "details" tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns or look at raw data of readme file to view the content and testing that I had done from this point on.
+- this is a remanent of my original submission as I could not figure out why my readme file was not appearing in preview and git hub pages. It turns out I was missing a closing "details" tag for one of my dropdowns and as a result when viewing my original submission readme file one needed to open up all my dropdowns or look at raw data of readme file to view the content, testing and deployment section that I had done from this point on.
 
 I raised this issue in github on submission hoping all my work would be visible to be examined.
 <img src="assets/docs/readme_screenshots/userstories/issuereadmefile.png">
@@ -561,6 +561,9 @@ colors being persistent and then not showing when clciked | set timeout function
 | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 noticed random country appearing when clicking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before |
 | 4 blank spaces can be entered as username, need to improve validation of username for this |
+|username box goes red when criteria met, name is still accepted. only appears when valid name typed immediately and start game pressed | username input box has caused me enough issues and while this red display is a bug it does not affect the main functionality of the username validation and display so i will look at this in future by looking at functions |
+| after 3 wrong answers, new questions appears very quickly nearly before color appears to tell user last selected country was wrong for last question | i would like to increase the time between |
+|if select any where in sea (blank bit of map) that counts as a guess| i would like to possible try to eliminate this so user doesnt waste guess by accident |
 
 
 ## Deployment
