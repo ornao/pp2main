@@ -284,7 +284,7 @@ function resetMap() {
 
 document.getElementById("zoom-in-button").onclick = () => zoom("in");
 document.getElementById("zoom-out-button").onclick = () => zoom("out");
-document.getElementById("left-button").onclick = () => pan("left");
-document.getElementById("right-button").onclick = () => pan("right");
-document.getElementById("up-button").onclick = () => pan("up");
-document.getElementById("down-button").onclick = () => pan("down");
+document.getElementById("left-button").onclick = () => pan("right");
+document.getElementById("right-button").onclick = () => pan("left");
+document.getElementById("up-button").onclick = () => pan("down");
+document.getElementById("down-button").onclick = () => pan("up");
