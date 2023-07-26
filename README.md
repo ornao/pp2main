@@ -234,16 +234,39 @@ Style.css passes with no errors.
 JSHint JS Validation Service was used to validate the Javascript files. 
 
 <details><summary>index.js</summary>
-
+This was the orignal image included in project with configuration of JSHint not correctly set up:
+<img src="assets/docs/validation_screenshots/endjs.png">
+This is the update version using corrected version of JSHint:
+<img src="assets/docs/validation_screenshots/endjs2.0.png">
 </details>
+
+In the orignal validation of level.js, the unused variable error messge was raised and hence i called the function at end of file to fix this. However this ultimately caused the bug of my username input not displaying on the home page on orginal submission and led to my fail which very much upset me when I realised. I had checked beofre submitting but as sometimes github can be slow updating changes to deployed website I realised too late after submission. At the time I did not think this could result in a fail as I believe all my other work would speak for itself. I do understand how username input not appearing is obviously very frustrating for the user so I am glad i have fould the bug and fixed it. 
 <details><summary>level.js</summary>
-
+This was the orignal image included in project with configuration of JSHint not correctly set up:
+<img src="assets/docs/validation_screenshots/leveljs.png">
+This is the update version using corrected version of JSHint:
+<img src="assets/docs/validation_screenshots/leveljs2.0.png">
+Example of error messge that ultimately caused the bug of my username input not displaying on the home page on orginal submission and led to my fail. The console.log is the simplest, easiest workaround I have found that allows the code to be valid through JSHint and not cause this bug. 
+<img src="assets/docs/validation_screenshots/leveljsbug.png">
 </details>
-<details><summary>game.js</summary>
 
+In the orignal validation of game.js, I had made a blunder with the configuration and hence instead of selecting "New JavaScript features (ES6)" in Assume of Configure in JShint and I had included 
+{
+  "esversion": 6
+}
+ at the top of file to allow me to use const as instructed by this [SlackOverflow post](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const). However, I was proved very much mistaken by allowing this to be my technique for handling these errors. I mistakenly believe I had no errors in my original submission as a result. 
+
+<details><summary>game.js</summary>
+This was the orignal image included in project:
+<img src="assets/docs/validation_screenshots/gamejs.png">
+This is the update version using corrected version of JSHint:
+<img src="assets/docs/validation_screenshots/gamejs2.0.png">
 </details>
 <details><summary>end.js</summary>
-
+This was the orignal image included in project:
+<img src="assets/docs/validation_screenshots/endjs.png">
+This is the update version using corrected version of JSHint:
+<img src="assets/docs/validation_screenshots/endjs2.0.png">>
 </details>
 
 ### Accessibility

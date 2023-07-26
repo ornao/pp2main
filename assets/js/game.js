@@ -98,7 +98,7 @@ function getNewQuestion() {
     // when reach 10/10 questions go to end page
     if (availableCountries.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('achievedScore', scoreUpdate);
-    		location.href = "/pp2main/end.html";
+        location.href = "/pp2main/end.html";
     }
     // increase question by 1
     questionCounter++;
@@ -167,7 +167,7 @@ function selectCountry(event) {
             incorrectColor[i].style.fill = "red";
         }
     }
-// reset the colors back to default when new question comes
+    // reset the colors back to default when new question comes
     function resetReds() {
         let incorrectColor = document.getElementsByClassName('wrong');
         for (let i = 0; i < incorrectColor.length; i++) {
@@ -217,56 +217,69 @@ function selectCountry(event) {
 const svg = document.getElementById("svg");
 
 const zoom = (direction) => {
-  const { scale, x, y } = getTransformParameters(svg);
-  let dScale = 0.1;
-  if (direction == "out") dScale *= -1;
-  if (scale == 0.1 && direction == "out") dScale = 0;
-  svg.style.transform = getTransformString(scale + dScale, x, y);
+    const {
+        scale,
+        x,
+        y
+    } = getTransformParameters(svg);
+    let dScale = 0.1;
+    if (direction == "out") dScale *= -1;
+    if (scale == 0.1 && direction == "out") dScale = 0;
+    svg.style.transform = getTransformString(scale + dScale, x, y);
 };
 
 const getTransformParameters = (element) => {
     const transform = element.style.transform;
     let scale = 1,
-      x = 0,
-      y = 0;
+        x = 0,
+        y = 0;
     if (transform.includes("scale"))
-      scale = parseFloat(transform.slice(transform.indexOf("scale") + 6));
+        scale = parseFloat(transform.slice(transform.indexOf("scale") + 6));
     if (transform.includes("translateX"))
-      x = parseInt(transform.slice(transform.indexOf("translateX") + 11));
+        x = parseInt(transform.slice(transform.indexOf("translateX") + 11));
     if (transform.includes("translateY"))
-      y = parseInt(transform.slice(transform.indexOf("translateY") + 11));
-    return { scale, x, y };
-  };
-  
+        y = parseInt(transform.slice(transform.indexOf("translateY") + 11));
+    return {
+        scale,
+        x,
+        y
+    };
+};
+
 const getTransformString = (scale, x, y) =>
-  "scale(" + scale + ") " + "translateX(" + x + "%) translateY(" + y + "%)";
+    "scale(" + scale + ") " + "translateX(" + x + "%) translateY(" + y + "%)";
 
 const pan = (direction) => {
-    const { scale, x, y } = getTransformParameters(svg);
+    const {
+        scale,
+        x,
+        y
+    } = getTransformParameters(svg);
     let dx = 0,
-      dy = 0;
+        dy = 0;
     switch (direction) {
-      case "left":
-        dx = -3;
-        break;
-      case "right":
-        dx = 3;
-        break;
-      case "up":
-        dy = -3;
-        break;
-      case "down":
-        dy = 3;
-        break;
+        case "left":
+            dx = -3;
+            break;
+        case "right":
+            dx = 3;
+            break;
+        case "up":
+            dy = -3;
+            break;
+        case "down":
+            dy = 3;
+            break;
     }
     svg.style.transform = getTransformString(scale, x + dx, y + dy);
-  };
+};
 
 // i added this function to get map to reset when button clicked 
 let defaultTransform = getTransformParameters(svg);
+
 function resetMap() {
     svg.style.transform = getTransformString(defaultTransform.scale, defaultTransform.x, defaultTransform.y);
-  };
+};
 
 
 document.getElementById("zoom-in-button").onclick = () => zoom("in");
