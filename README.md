@@ -426,7 +426,10 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
-
+<img src="assets/docs/readme_screenshots/userstories/mapleft.png">
+<img src="assets/docs/readme_screenshots/userstories/mapright.png">
+<img src="assets/docs/readme_screenshots/userstories/mapup.png">
+<img src="assets/docs/readme_screenshots/userstories/mapdown.png">
 </details>
 
 8. I want score and question number I am on to be displayed as I play the game
@@ -451,7 +454,10 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
-
+<img src="assets/docs/readme_screenshots/userstories/mapleft.png">
+<img src="assets/docs/readme_screenshots/userstories/mapright.png">
+<img src="assets/docs/readme_screenshots/userstories/mapup.png">
+<img src="assets/docs/readme_screenshots/userstories/mapdown.png">
 </details>
 
 10. I want play again button at end of quiz and be able to change difficulty level for new game
@@ -480,7 +486,10 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <img src="assets/docs/readme_screenshots/userstories/mapdefault.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomin.png">
 <img src="assets/docs/readme_screenshots/userstories/mapzoomout.png">
-
+<img src="assets/docs/readme_screenshots/userstories/mapleft.png">
+<img src="assets/docs/readme_screenshots/userstories/mapright.png">
+<img src="assets/docs/readme_screenshots/userstories/mapup.png">
+<img src="assets/docs/readme_screenshots/userstories/mapdown.png">
 </details>
 
 13. I want a 404 page to show in case of broken link
@@ -492,6 +501,7 @@ Hard array loads and hard questions displayed when hard buuton clicked
 <details><summary>Screenshot</summary>
 <img src="assets/docs/readme_screenshots/userstories/404.png">
 </details>
+
 14. I want user to be able to challenge themselves through different difficulty levels
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
@@ -519,7 +529,8 @@ Hard array loads and hard questions displayed when hard buuton clicked
 | 3 undefined country clicks caused random countries to light up  | added parameter to else statement when comparing correct answer through data numbers and giving half the undefined countries a data number of x         |
 end.html page would not load when deployed to github pages | changed pathway to include name of project and that worked |
 colors being persistent and then not showing when clciked | set timeout fucnction so can see country for a sec before disappearing and removing class once new question starts |
-noticed random country appearing when clciking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before
+noticed random country appearing when clciking guesses again when going fast through quiz | could be due to not have defined at the countries and hence same issue as before |
+|controls for map move whole svg and hence when zoomed in it appears right, left and up, down and working backwards |swap left for right and up for down to make buttons more user friendly|
 
   
 
