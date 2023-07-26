@@ -223,6 +223,7 @@ function selectCountry(event) {
 // code taken from one step code which allowed for smooth zooming and panning of svg 
 // 
 const svg = document.getElementById("svg");
+
 const zoom = (direction) => {
   const { scale, x, y } = getTransformParameters(svg);
   let dScale = 0.1;
@@ -269,6 +270,12 @@ const pan = (direction) => {
     svg.style.transform = getTransformString(scale, x + dx, y + dy);
   };
 
+// i added this function to get map to reset when button clicked 
+let defaultTransform = getTransformParameters(svg);
+const reset = () => {
+    svg.style.transform = getTransformString(defaultTransform.scale, defaultTransform.x, defaultTransform.y);
+  };
+
 
 document.getElementById("zoom-in-button").onclick = () => zoom("in");
 document.getElementById("zoom-out-button").onclick = () => zoom("out");
@@ -276,3 +283,4 @@ document.getElementById("left-button").onclick = () => pan("left");
 document.getElementById("right-button").onclick = () => pan("right");
 document.getElementById("up-button").onclick = () => pan("up");
 document.getElementById("down-button").onclick = () => pan("down");
+document.getElementById("reset-button").onclick = reset;
