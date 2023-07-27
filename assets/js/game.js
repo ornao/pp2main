@@ -279,7 +279,7 @@ let defaultTransform = getTransformParameters(svg);
 
 function resetMap() {
     svg.style.transform = getTransformString(defaultTransform.scale, defaultTransform.x, defaultTransform.y);
-};
+}
 
 // code apart of section taken from onestep code
 document.getElementById("zoom-in-button").onclick = () => zoom("in");
