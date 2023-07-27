@@ -281,7 +281,7 @@ function resetMap() {
     svg.style.transform = getTransformString(defaultTransform.scale, defaultTransform.x, defaultTransform.y);
 };
 
-
+// code apart of section taken from onestep code
 document.getElementById("zoom-in-button").onclick = () => zoom("in");
 document.getElementById("zoom-out-button").onclick = () => zoom("out");
 document.getElementById("left-button").onclick = () => pan("right");

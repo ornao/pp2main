@@ -159,9 +159,9 @@ The website has 4 webpages consisting of a number of particular features
 
 ### Home page
 The home page contains:
-- The title of the game with spinning world icon (user-stories: 1)
+- The title of the game with spinning world icon which gives user an idea what website will be abaout (user-stories: 1)
 - A short explanation of how to play (user-stories: 1)
-- An input form for the user to enter their name (user-stories: 2)
+- An input form for the user to enter their name to add a touch of personality to game (user-stories: 2)
 - A start game button to bring user to next page (pick level of game page)
 
 <img src="assets/docs/readme_screenshots/homepage.png">
@@ -182,14 +182,14 @@ The home page contains:
 </details>
 
 ### Level page 
-- Username displayed at top of page (user-stories: 2)
+- Username displayed at top of page which was previously entered, adds a touch of personality to game (user-stories: 2)
 - buttons to choose difficulty level of game by fetching different json files that contain increasingly difficult questions (user-stories: 3, 14)
 
 <img src="assets/docs/readme_screenshots/levelpage.png">
 
 ### Game page
 - Interactive world map (svg) where the countries are individually defined into paths
-- Heads up display that contains the username as input by user on home page (user-stories: 2), dynamic questions and score counter (user-stories: 6, 8)
+- Heads up display that contains the username as input by user on home page (user-stories: 2), dynamic questions and score counter (user-stories: 6, 8) to allow user to know question number, their score so far and also allows them to see name
 - Question display that updates country every new question to a max of 10. The countries do not repeat. This allows user to see how long is left of round
 
 <img src="assets/docs/readme_screenshots/gamepage.png">
